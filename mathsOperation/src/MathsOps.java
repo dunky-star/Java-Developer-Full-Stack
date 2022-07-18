@@ -1,3 +1,6 @@
+/*
+ * Geoffrey Duncan Opiyo: Simple Maths program based on addition, multiplication and division.
+ */
 public class MathsOps {
     //Addition
     public static int sumNum(int x, int y){
