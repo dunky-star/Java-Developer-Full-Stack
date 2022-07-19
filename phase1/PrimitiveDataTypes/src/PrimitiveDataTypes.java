@@ -10,8 +10,10 @@ public class PrimitiveDataTypes {
         double myDouble = 2.8;        // double = 8 bytes.
         char myChar = 'M';            // char = 1 bytes, it also stores a single character
                                       // a minimum value of '\u0000' and a maximum value of '\uffff'.
-
-
+        int minValue = Integer.MIN_VALUE;
+        int maxValue = Integer.MAX_VALUE;
+        System.out.println(" ");
+        System.out.println("The min value of an Int: " + Integer.MIN_VALUE + "\nThe max value of an Int: " + Integer.MAX_VALUE);
 
     }
 }
