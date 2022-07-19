@@ -7,8 +7,11 @@
 public class TypeCastingJava {
     public static void main(String[] args){
         int intValue = 190;
-
         double doubleValue = intValue;  // Automatic casting: int to double.
         System.out.println("\nThe casted int value " + intValue + " to double = " + doubleValue );
+
+        float floatValue = 9.78f;
+        int myIntValue = (int) floatValue; // Manual casting: float to int.
+        System.out.println("The casted float value " + floatValue + " to an integer = " + myIntValue );
     }
 }
