@@ -7,11 +7,16 @@
 public class TypeCastingJava {
     public static void main(String[] args){
         int intValue = 190;
+        byte byteValue = 27;
+        short shortValue = 1000;
         double doubleValue = intValue;  // Automatic casting: int to double.
         System.out.println("\nThe casted int value " + intValue + " to double = " + doubleValue );
 
         float floatValue = 9.78f;
         int myIntValue = (int) floatValue; // Manual casting: float to int.
         System.out.println("The casted float value " + floatValue + " to an integer = " + myIntValue );
+
+        long longTotal = 100000L + 20L * (byteValue + shortValue + intValue);
+        System.out.println("Long computation = " + longTotal );
     }
 }
