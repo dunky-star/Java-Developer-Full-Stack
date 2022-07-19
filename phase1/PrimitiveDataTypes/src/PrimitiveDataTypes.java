@@ -1,7 +1,7 @@
 public class PrimitiveDataTypes {
     public static void main(String[] args){
 
-        boolean k = false;            // boolean = 1 bit (true/false).
+        boolean k = true;            // boolean = 1 bit (true/false).
         byte byteValue = 100;         // byte = 8 bits, range: -128 to 127.
         short shortValue = -30000;    // short = 2 bytes, range: -32768 to 32767.
         int intValue = 1000000;       // int = 4 bytes, range: -2^32 to (2^31) - 1.
