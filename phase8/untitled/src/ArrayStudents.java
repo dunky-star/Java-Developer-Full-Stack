@@ -27,7 +27,7 @@ public class ArrayStudents{
     public static void main(String[] args) {
         Students[] s = new Students[10];// Array of objects Students of size 10.
 
-        s[0] = new Students("Kaligs", 3, "p001");
+        s[0] = new Students("KaligsXcross", 3, "p001");
         s[1] = new Students("Subi", 4, "p002");
         s[2] = new Students("Duncan", 5, "p003");
         s[3] = new Students("puppy", 6, "p004");
