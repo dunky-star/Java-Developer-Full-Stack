@@ -14,6 +14,7 @@ public class PrimitiveDataTypes {
         int maxValue = Integer.MAX_VALUE;
         System.out.println(" ");
         System.out.println("The min value of an Int: " + Integer.MIN_VALUE + "\nThe max value of an Int: " + Integer.MAX_VALUE);
-
+        System.out.println("The busted MAX Int value: " +(maxValue + 1));  // Overflow.
+        System.out.println("The busted MIN Int value: " +(minValue - 1));  // Underflow.
     }
 }
