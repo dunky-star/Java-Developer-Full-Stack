@@ -8,7 +8,7 @@ public class PrimitiveDataTypes {
         long myLong = 9000L;           // long = 8 bytes, Range: -2^63 to (2^63) - 1.
         float myFloat = 2.5F;         // float = 4 bytes.
         double myDouble = 2.8;        // double = 8 bytes.
-        char myChar = 'M';            // char = 1 bytes, it also stores a single character
+        char myChar = 'M';            // char = 2 bytes, it also stores a single character
                                       // a minimum value of '\u0000' and a maximum value of '\uffff'.
         int minValue = Integer.MIN_VALUE;
         int maxValue = Integer.MAX_VALUE;
