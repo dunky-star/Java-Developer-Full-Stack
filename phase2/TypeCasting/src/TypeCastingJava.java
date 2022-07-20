@@ -16,7 +16,16 @@ public class TypeCastingJava {
         int myIntValue = (int) floatValue; // Manual casting: float to int.
         System.out.println("The casted float value " + floatValue + " to an integer = " + myIntValue );
 
+        String data = String.valueOf(intValue);  // Converting Integer to string data type.
+        System.out.println("The Int. value of " + intValue + " to String = " + data);
+
+        String stringData = "2000";
+        int intData = Integer.parseInt(stringData); //  Converting String to Integer data type.
+        System.out.println("\nThe value of String " + stringData + " to Int = " + intData);
+
         long longTotal = 100000L + 20L * (byteValue + shortValue + intValue);
         System.out.println("Long computation = " + longTotal );
+
+
     }
 }
