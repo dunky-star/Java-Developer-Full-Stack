@@ -31,6 +31,20 @@ public class PrimitiveDataTypes {
         if(!isCar){
             System.out.println("This is boolean data type");
         }
+        boolean wasCar = isCar ? true : false;
+        if(wasCar){
+            System.out.println("wasCar is true");
+        }else{
+            System.out.println("wasCar is not isCar");
+        }
+
+        int ageOfCustomer = 20;
+        boolean isEigtheenOrAbove = ageOfCustomer >= 18 ? true : false;
+        if(isEigtheenOrAbove) {
+            System.out.println("This is an adult");
+        }else{
+            System.out.println("This is still a child");
+        }
 
     }
 }
