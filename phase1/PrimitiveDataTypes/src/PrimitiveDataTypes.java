@@ -29,8 +29,9 @@ public class PrimitiveDataTypes {
 
         boolean isCar = false;
         if(!isCar){
-            System.out.println("This is boolean data type");
+            System.out.println("This is boolean data type, it's not car");
         }
+
         boolean wasCar = isCar ? true : false;
         if(wasCar){
             System.out.println("wasCar is true");
