@@ -27,5 +27,10 @@ public class PrimitiveDataTypes {
         System.out.println("The Short MIN value: " + shortMinValue);
         System.out.println("The Short MAX value: " + shortMaxValue);
 
+        boolean isCar = false;
+        if(!isCar){
+            System.out.println("This is boolean data type");
+        }
+
     }
 }
