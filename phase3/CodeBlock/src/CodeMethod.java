@@ -1,4 +1,4 @@
-public class CodeBlock {
+public class CodeMethod {
     public static void main(String[] args){
         boolean gameOver = true;
         int score = 2000;
