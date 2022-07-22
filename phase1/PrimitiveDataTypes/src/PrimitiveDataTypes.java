@@ -1,5 +1,5 @@
 public class PrimitiveDataTypes {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         boolean k = true;            // boolean = 1 bit (true/false).
         byte byteValue = 100;         // byte = 8 bits, range: -128 to 127.
@@ -9,13 +9,13 @@ public class PrimitiveDataTypes {
         float myFloat = 2.5F;         // float = 4 bytes.
         double myDouble = 2.8;        // double = 8 bytes.
         char myChar = 'M';            // char = 2 bytes, it also stores a single character
-                                      // a minimum value of '\u0000' and a maximum value of '\uffff'.
+        // a minimum value of '\u0000' and a maximum value of '\uffff'.
         int minValue = Integer.MIN_VALUE;
         int maxValue = Integer.MAX_VALUE;
         System.out.println(" ");
         System.out.println("The min value of an Int: " + Integer.MIN_VALUE + "\nThe max value of an Int: " + Integer.MAX_VALUE);
-        System.out.println("The busted MAX Int value: " +(maxValue + 1));  // Overflow.
-        System.out.println("The busted MIN Int value: " +(minValue - 1));  // Underflow.
+        System.out.println("The busted MAX Int value: " + (maxValue + 1));  // Overflow.
+        System.out.println("The busted MIN Int value: " + (minValue - 1));  // Underflow.
 
         byte byteMinValue = Byte.MIN_VALUE;
         byte byteMaxValue = Byte.MAX_VALUE;
@@ -28,22 +28,22 @@ public class PrimitiveDataTypes {
         System.out.println("The Short MAX value: " + shortMaxValue);
 
         boolean isCar = false;
-        if(!isCar){
+        if (!isCar) {
             System.out.println("This is boolean data type, it's not car");
         }
 
         boolean wasCar = isCar ? true : false;
-        if(wasCar){
+        if (wasCar) {
             System.out.println("wasCar is true");
-        }else{
+        } else {
             System.out.println("wasCar is not isCar");
         }
 
         int ageOfCustomer = 20;
         boolean isEigtheenOrAbove = (ageOfCustomer >= 18) ? true : false;
-        if(isEigtheenOrAbove) {
+        if (isEigtheenOrAbove) {
             System.out.println("This is an adult");
-        }else{
+        } else {
             System.out.println("This is still a child");
         }
 
