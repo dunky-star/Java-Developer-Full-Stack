@@ -15,8 +15,9 @@ public class CodeMethod {
         highScore = calculateScore(true, 0, 8, 250);
         System.out.println("\nYour final score was: " + highScore);
 
-        int highScorePosition = calculateHighScorePosition(5000);
-        displayHighScorePosition("Duncan", highScorePosition);
+        // Methods calls
+        int highScorePosition = calculateHighScorePosition(5000); // Calculating player's score position.
+        displayHighScorePosition("Duncan", highScorePosition);    // Displaying the player and the score position.
 
         highScorePosition = calculateHighScorePosition(800);
         displayHighScorePosition("Xi Hongjie", highScorePosition);
@@ -40,10 +41,12 @@ public class CodeMethod {
         }
 
     }
+    // Method to display high score position
     public static void displayHighScorePosition (String playerName, int highScorePosition){
         System.out.println(playerName + " managed to get into position "
-        + highScorePosition + "on the high score table");
+        + highScorePosition + " on the high score table");
     }
+    // Method to calculate high score position
     public static int calculateHighScorePosition(int playerScore){
         if(playerScore > 1000){
             return 1;
