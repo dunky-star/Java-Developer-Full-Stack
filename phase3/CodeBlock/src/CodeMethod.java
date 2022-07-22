@@ -16,7 +16,7 @@ public class CodeMethod {
     public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
         if (gameOver == true) {
             int finalScore = score + (levelCompleted * bonus);
-            System.out.println("\nYour final score was: " + score);
+            System.out.println("\nYour final score was: " + finalScore);
         }
 
     }
