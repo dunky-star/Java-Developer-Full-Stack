@@ -40,7 +40,7 @@ public class PrimitiveDataTypes {
         }
 
         int ageOfCustomer = 20;
-        boolean isEigtheenOrAbove = ageOfCustomer >= 18 ? true : false;
+        boolean isEigtheenOrAbove = (ageOfCustomer >= 18) ? true : false;
         if(isEigtheenOrAbove) {
             System.out.println("This is an adult");
         }else{
