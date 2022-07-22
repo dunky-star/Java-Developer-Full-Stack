@@ -7,7 +7,7 @@ public class CodeMethod {
         int bonus = 250;
         if (gameOver) {
             int finalScore = score + (levelCompleted * bonus);
-            System.out.println("\nYour final score was: " + score);
+            System.out.println("\nYour final score was: " + finalScore);
         }
         calculateScore(true, 2000, levelCompleted, bonus);
 
