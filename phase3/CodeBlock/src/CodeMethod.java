@@ -1,10 +1,11 @@
 public class CodeMethod {
     public static void main(String[] args) {
-
+        boolean gameOver = true;
+        int score = 2000;
         int levelCompleted = 8;
         int bonus = 250;
 
-        calculateScore(true, 2000, levelCompleted, bonus);
+        calculateScore(gameOver, score, levelCompleted, bonus);
 
         calculateScore(true, 0, 8, 250);
 
