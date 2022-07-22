@@ -1,7 +1,6 @@
 public class CodeMethod {
     public static void main(String[] args) {
 
-        int score = 0;
         int levelCompleted = 8;
         int bonus = 250;
 
