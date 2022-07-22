@@ -5,17 +5,22 @@ public class CodeMethod {
         int levelCompleted = 8;
         int bonus = 250;
 
-        calculateScore(gameOver, score, levelCompleted, bonus);
+        int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
+        System.out.println("\nYour final score was: " + highScore);
 
-        calculateScore(true, 0, 8, 250);
+        highScore = calculateScore(true, 0, 8, 250);
+        System.out.println("\nYour final score was: " + highScore);
+
 
     }
 
-    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+    public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
         if (gameOver == true) {
             int finalScore = score + (levelCompleted * bonus);
             finalScore += 0;
-            System.out.println("\nYour final score was: " + finalScore);
+            return finalScore;
+        } else {
+            return -1;
         }
 
     }
