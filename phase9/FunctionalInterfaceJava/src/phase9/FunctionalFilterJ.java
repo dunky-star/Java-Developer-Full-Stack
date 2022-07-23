@@ -41,7 +41,7 @@ public class FunctionalFilterJ {
                 .filter(i -> i % 2 == 0)
                 .filter(i -> i % 3 == 0)
                 .findFirst().get(); // To find first number from filtered list.
-        System.out.println("\nThe first lowest LCM from the integer list is: " + lowestCommonMultiple + "\n");
+        System.out.println("\nFirst number divisible by 2 and 3 in the list is :\n");
 
         Stream<Integer> divisibleByThree = listOfNumbers.stream()
                 .filter(x -> x % 2 != 0);
