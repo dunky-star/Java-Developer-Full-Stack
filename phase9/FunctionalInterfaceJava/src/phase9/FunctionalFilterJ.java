@@ -22,11 +22,11 @@ public class FunctionalFilterJ {
         System.out.println(listOfStudents); // Printing array list.
 
         List<Integer> listOfNumbers = Arrays.asList(1, 2, 3, 4, 5, 6, 12, 18, 20, 22); // Creating arrayList Int type for data storage.
-        Integer lcm = listOfNumbers.stream()
+        Integer lowestCommonMultiple = listOfNumbers.stream()
                                    .filter(i -> i % 2 == 0)
                                    .filter(i -> i % 3 == 0)
                                    .findFirst().get();
-        System.out.print(lcm);
+        System.out.print(lowestCommonMultiple);
 
 
     }
