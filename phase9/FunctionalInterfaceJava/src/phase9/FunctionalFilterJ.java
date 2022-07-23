@@ -25,7 +25,7 @@ public class FunctionalFilterJ {
         Integer lowestCommonMultiple = listOfNumbers.stream()
                                    .filter(i -> i % 2 == 0)
                                    .filter(i -> i % 3 == 0)
-                                   .findFirst().get();
+                                   .findFirst().get(); // To find first number from filtered list.
         System.out.print(lowestCommonMultiple);
 
 
