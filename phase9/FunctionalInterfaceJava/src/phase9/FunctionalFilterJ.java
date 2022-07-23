@@ -1,6 +1,6 @@
 /**
  * Written by: Geoffrey Duncan O.
- * Sample Java program to demonstrate how to use the filter() on Java collections.
+ * Sample Java program to demonstrate how to use the filter() method of Stream class on Java collections.
  */
 package phase9;
 
