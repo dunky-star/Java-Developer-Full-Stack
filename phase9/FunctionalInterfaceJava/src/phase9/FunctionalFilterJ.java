@@ -23,7 +23,7 @@ public class FunctionalFilterJ {
         System.out.println("\nList of Students: " + listOfStudents); // Printing array list.
 
         // Using one filter()
-        System.out.println("\nlist of student print whose length is greater than 10");
+        System.out.println("\nList of student whose length is greater than 10");
         System.out.println("========================================================");
         listOfStudents.stream()
                 .filter(s -> s.length() > 10)
