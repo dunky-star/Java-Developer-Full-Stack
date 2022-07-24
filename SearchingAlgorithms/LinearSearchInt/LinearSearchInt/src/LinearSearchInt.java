@@ -1,5 +1,10 @@
 /**
  * Linear Search Algorithm
+ * =======================
+ * Linear Search involves sequential searching for an element in the given data structure until
+ * either the element is found or the end of the structure is reached.
+ * If the element is found, we usually just return its position in the data structure.
+ * If not, we usually return -1.
  */
 public class LinearSearchInt {
     public static int LinearSearchAlgo(int arr[], int elementToSearch) {
