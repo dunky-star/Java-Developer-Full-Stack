@@ -1,5 +1,5 @@
 /**
- * Linear Search Algorithm
+ * Linear Search Algorithm: brute-force algorithm and very rarely used in production.
  * =======================
  * Linear Search involves sequential searching for an element in the given data structure until
  * either the element is found or the end of the structure is reached.
