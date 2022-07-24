@@ -47,7 +47,7 @@ public class LinearSearchStr {
         //
         File fileToSearch = new File("3.txt");
         int result = linearSearchAlgo(fileList, fileToSearch);
-        print (new File("3.txt"), result);
+        print (fileToSearch , result);
     }
 
 
