@@ -11,12 +11,12 @@ public class LinearSearchStr {
 
     public static void main(String[] args){
         ArrayList<File> fileList = new ArrayList<>();
-        fileList.add(new File(1.txt));
-        fileList.add(new File(2.txt));
-        fileList.add(new File(3.txt));
-        fileList.add(new File(4.txt));
-        fileList.add(new File(6.txt));
-        fileList.add(new File(5.txt));
+        fileList.add(new File("1.txt"));
+        fileList.add(new File("2.txt"));
+        fileList.add(new File("3.txt"));
+        fileList.add(new File("4.txt"));
+        fileList.add(new File("6.txt"));
+        fileList.add(new File("5.txt"));
 
     }
 
