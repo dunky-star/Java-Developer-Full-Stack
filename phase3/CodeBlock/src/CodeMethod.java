@@ -1,6 +1,6 @@
-/*
-  Written by: Geoffrey Duncan 0.
-  Demonstrating method techniques and methods calls in Java.
+/**
+ * Written by: Geoffrey Duncan 0.
+ * Demonstrating method techniques and methods calls in Java.
  */
 public class CodeMethod {
     public static void main(String[] args) {
