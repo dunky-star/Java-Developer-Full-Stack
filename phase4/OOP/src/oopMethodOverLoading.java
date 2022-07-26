@@ -6,4 +6,7 @@ public class oopMethodOverLoading {
         System.out.println("Player " + playerName + "scored " + score);
         return score * 1000;
     }
+    public static void main(String[] args){
+        caclculateScore("Duncan", 200);
+    }
 }
