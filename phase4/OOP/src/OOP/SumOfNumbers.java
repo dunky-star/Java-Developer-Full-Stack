@@ -1,6 +1,6 @@
 /**
- * Method overloading; Create a method which can do 1). the sum of two numbers
- * 2). the sum of three numbers and 3). the sum of four numbers
+ * Method overloading; Create a method which can perform 1). The sum of two numbers
+ * 2). The sum of three numbers and 3). The sum of four numbers.
  * Each method to have parameters passed to it with numbers to sum.
  */
 package OOP;
