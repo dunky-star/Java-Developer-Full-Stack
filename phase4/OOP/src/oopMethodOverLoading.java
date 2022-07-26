@@ -1,24 +1,55 @@
 /**
  * Method overloading in Java.
  * Basically, using the same method name but different number of parameters.
+ * When overloading a method, we need to create unique method signature.
  */
 public class oopMethodOverLoading {
-    public static int calculateScore(String playerName, int score){
+    public static int calculateScore(String playerName, int score) {
         System.out.println("Player " + playerName + " scored " + score + " points.");
         return score * 1000; // 1000 is an arbitrary number.
     }
-    public static int calculateScore(int score){
-        System.out.println("Unnamed player scored " + score + " points." );
+
+    public static int calculateScore(int score) {
+        System.out.println("Unnamed player scored " + score + " points.");
         return score * 1000; // 1000 is an arbitrary number.
     }
-    public static int calculateScore(){
+
+    public static int calculateScore() {
         System.out.println("No player name, no player score");
         return 0; // 1000 is an arbitrary number.
     }
-    public static void main(String[] args){
-     int newScore =   calculateScore("Duncan", 200);
-     System.out.println("New score is: " +newScore);
-     calculateScore(600);
-     calculateScore();
+
+    public static double calc_Feet_Inches_To_Centimeters(double feet, double inches) {
+
+        if ((feet < 0) || ((inches < 0) || (inches > 12))) {
+            System.out.println("Invalid feet or inches parameters");
+            return -1;
+        }
+        double centimeters = (feet * 12) * 2.54;
+        centimeters += inches * 2.54;
+        System.out.println(feet + " feet, " + inches + " inches = " + centimeters + " cm");
+        return centimeters;
+    }
+    public static double calc_Feet_Inches_To_Centimeters(double inches) {
+        if(inches < 0) {
+            return -1;
+        }
+        double feet = (int) inches / 12;
+        double remainingInches = (int) inches % 12;
+        System.out.println(inches + " inches is equal to " + feet + " feet and " + remainingInches + " inches");
+        return calc_Feet_Inches_To_Centimeters(feet, remainingInches);
+    }
+
+    public static void main(String[] args) {
+        int newScore = calculateScore("Duncan", 200);
+        System.out.println("New score is: " + newScore);
+        calculateScore(600);
+        calculateScore();
+        double centimeters = calc_Feet_Inches_To_Centimeters(6, 0);
+        if (centimeters < 0.0) {
+            System.out.println("Invalid parameters");
+        }
+
+        calc_Feet_Inches_To_Centimeters(157);
     }
 }
