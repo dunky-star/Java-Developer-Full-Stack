@@ -3,6 +3,7 @@
  * Basically, using the same method name but different number of parameters.
  * When overloading a method, we create methods of same name but different implementation.
  */
+package OOP;
 public class oopMethodOverLoading {
     public static int calculateScore(String playerName, int score) {
         System.out.println("Player " + playerName + " scored " + score + " points.");
