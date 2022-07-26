@@ -1,7 +1,7 @@
 /**
  * Method overloading in Java.
  * Basically, using the same method name but different number of parameters.
- * When overloading a method, we need to create unique method signature.
+ * When overloading a method, we create methods of same name but different implementation.
  */
 public class oopMethodOverLoading {
     public static int calculateScore(String playerName, int score) {
