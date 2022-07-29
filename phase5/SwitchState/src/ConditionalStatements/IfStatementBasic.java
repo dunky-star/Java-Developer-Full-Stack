@@ -2,6 +2,8 @@
  * Geoffrey Duncan Opiyo.
  * Control flow in Java.
  */
+package ConditionalStatements;
+
 public class IfStatementBasic {
     public static void main (String[] args){
         // Using IF-ELSE statement.
