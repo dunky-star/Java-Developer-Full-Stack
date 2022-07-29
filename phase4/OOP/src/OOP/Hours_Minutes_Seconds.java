@@ -4,7 +4,7 @@ public class Hours_Minutes_Seconds {
     private static final String INVALID_MESSAGE_VALUE = "Invalid value";
     private static String getDuration( long minutes, long seconds){
         if(minutes < 0 || seconds < 0 || seconds > 59){
-            return "Invalid value";
+            return INVALID_MESSAGE_VALUE;
         }
         long hours = minutes / 60;
         long remainingMinutes = minutes % 60;
@@ -12,7 +12,7 @@ public class Hours_Minutes_Seconds {
     }
     private static String getDuration( long seconds){
         if (seconds < 0){
-            return "Invalid value";
+            return INVALID_MESSAGE_VALUE;
         }
         long minutes = seconds /60;
         long remainingSeconds = seconds % 60;
