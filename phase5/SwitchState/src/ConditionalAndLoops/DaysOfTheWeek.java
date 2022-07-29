@@ -1,4 +1,4 @@
-package ConditionalStatements;
+package ConditionalAndLoops;
 
 public class DaysOfTheWeek {
     public static void main(String[] args){
