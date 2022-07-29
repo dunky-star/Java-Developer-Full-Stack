@@ -1,3 +1,7 @@
+/**
+ * Geoffrey Duncan Opiyo.
+ * Control flow in Java.
+ */
 public class IfStatementBasic {
     public static void main (String[] args){
         // Using IF-ELSE statement.
@@ -20,7 +24,7 @@ public class IfStatementBasic {
                 break;
             case 3: case 4: case 5:
                 System.out.println("Was a 3 or 4 or 5");
-                break
+                break;
             default:
                 System.out.println("The value Was not 1 or 2");
                 break;
