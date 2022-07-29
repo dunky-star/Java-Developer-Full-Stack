@@ -14,19 +14,19 @@ public class IfStatementBasic {
             System.out.println("Value was not 1 or 2");
         }
         // Alternative approach is using switch-case statement
-        int switchValue = 1;
-        switch(switchValue){
-            case 1:
-                System.out.println("The value was 1");
+        String month = "january";
+        switch(month.toLowerCase()){
+            case "january":
+                System.out.println("The month is JAN.");
                 break;
-            case 2:
-                System.out.println("The value was 2");
+            case "february":
+                System.out.println("The month is Feb.");
                 break;
-            case 3: case 4: case 5:
-                System.out.println("Was a 3 or 4 or 5");
+            case "march": case "april": case "may":
+                System.out.println("Rainy months of the year.");
                 break;
             default:
-                System.out.println("The value Was not 1 or 2");
+                System.out.println("It is Dec already.");
                 break;
         }
     }
