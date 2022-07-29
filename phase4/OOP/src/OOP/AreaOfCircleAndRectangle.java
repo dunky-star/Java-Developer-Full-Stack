@@ -6,8 +6,7 @@ public class AreaOfCircleAndRectangle {
         if (r <= 0){
             return -1;
         }
-        final double pi = 3.14;
-        return pi * r * r;
+            return pi * r * r;
     }
     private static double Area(double x, double y){
         if(x < 0 || y < 0){
