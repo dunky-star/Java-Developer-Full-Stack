@@ -18,6 +18,9 @@ public class IfStatementBasic {
             case 2:
                 System.out.println("The value was 2");
                 break;
+            case 3: case 4: case 5:
+                System.out.println("Was a 3 or 4 or 5");
+                break
             default:
                 System.out.println("The value Was not 1 or 2");
                 break;
