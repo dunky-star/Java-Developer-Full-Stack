@@ -2,7 +2,14 @@ package ConditionalStatements;
 
 public class DaysOfTheWeek {
     public static void main(String[] args){
+        printDaysOfWeek(0);
+        printDaysOfWeek(1);
+        printDaysOfWeek(2);
+        printDaysOfWeek(3);
+        printDaysOfWeek(4);
+        printDaysOfWeek(5);
         printDaysOfWeek(6);
+        printDaysOfWeek(10);
 
     }
     private static void printDaysOfWeek(int day){
