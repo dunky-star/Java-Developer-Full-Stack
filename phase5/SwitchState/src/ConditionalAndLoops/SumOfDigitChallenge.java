@@ -1,8 +1,14 @@
+/**
+ * Write a method with the name sumOfDigits, which has one long parameter.
+ * If parameter >= 10, then the method should process the number and return sum of all digits,
+ * otherwise return -1 to indicate an invalid value. Numbers from 0-9 has one digit, so we don't
+ * want to process them, also return -1 for negative numbers.
+ */
 package ConditionalAndLoops;
 
 public class SumOfDigitChallenge {
 
-    private static long sumOfDigit(long number){
+    private static long sumOfDigits(long number){
         if (number < 10){
             return -1;
         }
@@ -21,9 +27,9 @@ public class SumOfDigitChallenge {
     }
     public static void main(String[] args){
 
-        System.out.println("The sum of digit in 155 is " + sumOfDigit(155));
-        System.out.println("The sum of digit in 4 is " + sumOfDigit(4));
-        System.out.println("The sum of digit in 256772122179 is " + sumOfDigit(256772122179L));
+        System.out.println("The sum of digit in 155 is " + sumOfDigits(155));
+        System.out.println("The sum of digit in 4 is " + sumOfDigits(4));
+        System.out.println("The sum of digit in 256772122179 is " + sumOfDigits(256772122179L));
 
     }
 }
