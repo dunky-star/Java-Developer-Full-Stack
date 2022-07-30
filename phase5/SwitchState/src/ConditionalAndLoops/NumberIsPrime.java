@@ -13,6 +13,11 @@ public class NumberIsPrime {
         return true;
     }
     public static void main(String[] args){
-      System.out.println("Is number prime: " +isPrime(5));
+      int count = 0;
+      for (int i = 2; i < 50; i++){
+          if (isPrime(i)){
+              System.out.println("Number " + i + " is a prime number.");
+          }
+      }
     }
 }
