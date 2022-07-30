@@ -1,3 +1,6 @@
+/**
+ * Written by: Geoffrey Duncan O. insta:KaligsXcross, Tweet:dunky2012
+ */
 package ConditionalAndLoops;
 
 public class NumberIsPrime {
