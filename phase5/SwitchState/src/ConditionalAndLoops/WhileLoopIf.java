@@ -7,7 +7,7 @@ package ConditionalAndLoops;
 
 public class WhileLoopIf {
     public static boolean isEvenNumber(int number) {
-        if (number % 2 == 0) {
+        if ((number % 2) == 0) {
             return true;
         } else {
             return false;
@@ -22,8 +22,7 @@ public class WhileLoopIf {
             if (!isEvenNumber(number)) {
                 continue;
             }
-
+            System.out.println(number + " is Even number");
         }
-        System.out.println(number + " is Even number");
     }
 }
