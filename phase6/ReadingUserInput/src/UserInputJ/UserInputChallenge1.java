@@ -1,3 +1,7 @@
+/**
+ * A program to accept user inputs and return the sum of numbers entered.
+ * Checks also if a number entered is a valid integer, otherwise, returns invalid number.
+ */
 package UserInputJ;
 
 import java.util.Scanner;
@@ -10,7 +14,7 @@ public class UserInputChallenge1 {
         int sum = 0;
         while (true){
             int order = counter + 1;
-            System.out.println("Enter number # " + order + ": " );
+            System.out.print("Enter number # " + order + ": " );
             boolean isInteger = sc.hasNextInt();
             if(isInteger){
                 int number = sc.nextInt();
