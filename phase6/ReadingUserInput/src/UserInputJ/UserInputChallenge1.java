@@ -20,7 +20,7 @@ public class UserInputChallenge1 {
                 int number = sc.nextInt();
                 counter++;
                 sum += number;
-                if(counter == 10){
+                if(counter == 5){
                     break;
                 }
             }else{
