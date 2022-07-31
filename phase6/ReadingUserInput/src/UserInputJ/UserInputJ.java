@@ -3,6 +3,7 @@
  * Program to calculate current age of a person in 2022 when that person
  * enters his/her year of birth (hard coded though).
  */
+package UserInputJ;
 
 import java.util.Scanner;
 
@@ -11,7 +12,7 @@ public class UserInputJ {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your year of birth: ");
-        
+
         boolean hasNextInt = sc.hasNextInt();
 
         if (hasNextInt) {
