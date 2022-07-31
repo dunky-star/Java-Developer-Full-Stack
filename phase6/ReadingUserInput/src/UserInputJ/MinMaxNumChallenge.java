@@ -13,12 +13,18 @@ public class MinMaxNumChallenge {
         Scanner sc = new Scanner(System.in);
         int minValue = 0;
         int maxValue = 0;
+        boolean first = true;
 
         while (true) {
             System.out.println("Enter Number: ");
             boolean isAnInteger = sc.hasNextInt();
             if (isAnInteger) {
                 int number = sc.nextInt();
+                if(first){
+                    first = false;
+                    minValue = number;
+                    maxValue = number;
+                }
                 if(number > maxValue){
                     maxValue = number;
                 }
