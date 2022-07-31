@@ -10,11 +10,11 @@ public class UserInputJ {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
+        System.out.print("Enter your year of birth: ");
+        
         boolean hasNextInt = sc.hasNextInt();
 
         if (hasNextInt) {
-            System.out.print("Enter your year of birth: ");
             int yearOfBirth = sc.nextInt();
             sc.nextLine();  // To handle next line character (Enter Key).tim
 
