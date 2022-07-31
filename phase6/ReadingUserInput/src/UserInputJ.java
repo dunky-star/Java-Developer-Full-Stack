@@ -7,21 +7,23 @@
 import java.util.Scanner;
 
 public class UserInputJ {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter your year of birth: ");
         int yearOfBirth = sc.nextInt();
-        sc.nextLine();  // To handle next line character (Enter Key).
+        sc.nextLine();  // To handle next line character (Enter Key).tim
 
         System.out.print("Enter your name: ");
         String name = sc.nextLine();
         int age = 2022 - yearOfBirth;
 
-        System.out.println("Your name is: " + name + " and your age is: " + age);
-
+        if (age >= 0 && age <= 115) {
+            System.out.println("Your name is: " + name + " and your age is: " + age);
+        } else {
+            System.out.println("Invalid year of birth");
+        }
         sc.close();
-
     }
 }
