@@ -4,14 +4,12 @@ public class SimpleCalculator {
     private double firstNumber;
     private double secondNumber;
 
-    public double setFirstNumber(double x) {
-        this.firstNumber = x;
-        return x;
+    public void setFirstNumber(double firstNumber) {
+        this.firstNumber = firstNumber;
     }
 
-    public double setSecondNumber(double y) {
-        this.secondNumber = y;
-        return y;
+    public void setSecondNumber(double secondNumber) {
+        this.secondNumber = secondNumber;
     }
 
     public double getFirstNumber() {
@@ -22,19 +20,19 @@ public class SimpleCalculator {
         return this.secondNumber;
     }
 
-    public double getAdditionResult() {
+    public double getAddition() {
         return firstNumber + secondNumber;
     }
 
-    public double getSubtractionResult() {
+    public double getSubtraction() {
         return firstNumber - secondNumber;
     }
 
-    public double getMultiplicationResult() {
+    public double getMultiplication() {
         return firstNumber * secondNumber;
     }
 
-    public double getDivisionResult() {
+    public double getDivision() {
 
         return firstNumber / secondNumber;
     }
