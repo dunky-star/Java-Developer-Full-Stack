@@ -1,6 +1,6 @@
 package OOP2;
 
-public class Main {
+public class MainCar {
     public static void main(String[] args){
         Car porsche = new Car();
         Car subaru = new Car();
