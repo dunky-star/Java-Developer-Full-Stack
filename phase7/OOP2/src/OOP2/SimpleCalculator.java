@@ -3,34 +3,39 @@ package OOP2;
 public class SimpleCalculator {
     private double firstNumber;
     private double secondNumber;
-    public double setFirstNumber(double x){
+
+    public double setFirstNumber(double x) {
         this.firstNumber = x;
         return x;
     }
-    public double setSecondNumber(double y){
+
+    public double setSecondNumber(double y) {
         this.secondNumber = y;
         return y;
     }
 
-    public double getFirstNumber(){
+    public double getFirstNumber() {
         return this.firstNumber;
     }
-    public double getSecondNumber(){
+
+    public double getSecondNumber() {
         return this.secondNumber;
     }
 
-    public double getAdditionResult(){
+    public double getAdditionResult() {
         return firstNumber + secondNumber;
     }
-    public double getSubtractionResult(){
+
+    public double getSubtractionResult() {
         return firstNumber - secondNumber;
     }
-    public double getMultiplicationResult (){
+
+    public double getMultiplicationResult() {
         return firstNumber * secondNumber;
     }
-    public double getDivisionResult  (){
+
+    public double getDivisionResult() {
+
         return firstNumber / secondNumber;
     }
-
 }
-
