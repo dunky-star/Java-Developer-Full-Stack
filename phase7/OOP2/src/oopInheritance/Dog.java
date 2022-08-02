@@ -1,5 +1,6 @@
 /**
- * Written by: Geoffrey Duncan O. Tweet: dunky2012, Insta: KaligsXcross
+ * @Author: Geoffrey Duncan O. Tweet: dunky2012, Insta: KaligsXcross
+ * @since: Java 17
  * Inheritance concept.
  * The keyword [super] is used to access/call the parent class members (methods/variables).
  * The keyword [this] is used to call the current class members (variable and methods).
