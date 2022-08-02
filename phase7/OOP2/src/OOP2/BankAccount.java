@@ -15,6 +15,7 @@ public class BankAccount {
     private String customerName;
     private String customerEmailAddress;
     private String customerPhoneNumber;
+    
     // Constructor
     public BankAccount(){
         System.out.println("Empty constructor call");
