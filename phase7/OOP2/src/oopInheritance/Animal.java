@@ -62,10 +62,10 @@ public class Animal {
     }
 
     public void eat() {
-        System.out.println("\nAnimal is eating...");
+        System.out.println("\nAnimal.eat() called...");
     }
 
     public void move() {
-        System.out.println("Animal is moving...");
+        System.out.println("Animal.walk() called...");
     }
 }
