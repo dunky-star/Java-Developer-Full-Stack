@@ -6,6 +6,8 @@
  * This is required when we have a parameter with the same name as an instance variable.
  * We can use both of them anywhere in the class except the static areas (the static block or static method).
  * Any attempt to do so will lead to a compile-time error.
+ * Method overriding: means defining a method in a child class that already exist in the parent class
+ * with same signature (same name, same arguments), also known as [run time polymorphism].
  */
 package oopInheritance;
 
