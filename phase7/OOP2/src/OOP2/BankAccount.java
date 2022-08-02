@@ -15,10 +15,14 @@ public class BankAccount {
     private String customerName;
     private String customerEmailAddress;
     private String customerPhoneNumber;
-    
+
     // Constructor
-    public BankAccount(){
-        System.out.println("Empty constructor call");
+    public BankAccount(String number, double balance, String customerName, String customerEmailAddress, String customerPhoneNumber ){
+        this.number = number;
+        this. balance = balance;
+        this.customerName = customerName;
+        this.customerEmailAddress = customerEmailAddress;
+        this.customerPhoneNumber = customerPhoneNumber;
     }
 
     // Getter and setter methods
