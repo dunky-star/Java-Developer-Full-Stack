@@ -25,6 +25,11 @@ public class BankAccount {
         this.customerPhoneNumber = customerPhoneNumber;
     }
 
+    // Constructor overloading.
+    public BankAccount(String customerName, String customerEmailAddress, String customerPhoneNumber ){
+        this("800700112", 0.0, customerName,customerEmailAddress, customerPhoneNumber );
+    }
+
     // Getter and setter methods
     public String getNumber() {
         return number;
