@@ -12,7 +12,7 @@ public class MainBankAccount {
         dunkyAccount.withdrawal(100.0);
 
         BankAccount carlAccount = new BankAccount("Carl", "carl2@yahoo.com", "+25675000xxx");
-        System.out.println(carlAccount.getNumber() + " name " + carlAccount.getCustomerName());
+        System.out.println("\nNext customer A/C: " + carlAccount.getNumber() + "  , customer name: " + carlAccount.getCustomerName() + " , Customer bank balance: " + carlAccount.getBalance());
 
     }
 }
