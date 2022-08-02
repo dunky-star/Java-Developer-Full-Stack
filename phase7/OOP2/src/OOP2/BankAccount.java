@@ -15,7 +15,12 @@ public class BankAccount {
     private String customerName;
     private String customerEmailAddress;
     private String customerPhoneNumber;
+    // Constructor
+    public BankAccount(){
+        System.out.println("Empty constructor call");
+    }
 
+    // Getter and setter methods
     public String getNumber() {
         return number;
     }
@@ -55,12 +60,13 @@ public class BankAccount {
     public void setCustomerPhoneNumber(String customerPhoneNumber) {
         this.customerPhoneNumber = customerPhoneNumber;
     }
+    // Instance methods
     public void deposit(double depositAmount){
         this.balance += depositAmount;
         System.out.println("Deposit of " + depositAmount + " made. New balance = " + this.balance);
     }
     public void withdrawal(double withdrawalAmount){
-        if(this.balance - withdrawalAmount <= 0){
+        if(this.balance - withdrawalAmount < 0){
             System.out.println("Only " + this.balance + " available. Withdrawal not processed");
         }else{
             this.balance -= withdrawalAmount;
