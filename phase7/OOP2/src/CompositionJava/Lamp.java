@@ -1,5 +1,9 @@
 package CompositionJava;
 
+/**
+ * @author: Geoffrey DUncan O.
+ */
+
 
 public class Lamp {
     private String style;
