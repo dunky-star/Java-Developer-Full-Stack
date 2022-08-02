@@ -6,5 +6,6 @@ public class Main {
         Dog dog = new Dog("dunny", 1, 1, 4,20,2, 4, 1,10, "Long silky" );
 
         dog.eat();
+        dog.walk();
     }
 }
