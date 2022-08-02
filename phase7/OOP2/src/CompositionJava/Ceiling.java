@@ -1,4 +1,4 @@
-package CompEncapPolymorphism;
+package CompositionJava;
 
 
 public class Ceiling {
