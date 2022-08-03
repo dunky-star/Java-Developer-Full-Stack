@@ -42,30 +42,68 @@ class Cars{
     }
 }
 
-class Mitsubishi extends Cars{
+class Subaru extends Cars{
 
-    public Mitsubishi(int cylinders, String name) {
+    public Subaru(int cylinders, String name) {
         super(cylinders, name);
     }
 
     @Override
     public String startEngine() {
-        return "Mitsubishi -> startEngine()";
+        return "Subaru -> startEngine()";
     }
 
     @Override
     public String accelerate() {
-        return "Mitsubishi -> accelerate()";
+        return "Subaru -> accelerate()";
     }
 
     @Override
     public String brake() {
-        return "Mitsubishi -> brake()";
+        return "Subaru -> brake()";
+    }
+}
+
+
+class Toyota extends Cars{
+
+    public Toyota(int cylinders, String name) {
+        super(cylinders, name);
+    }
+
+    @Override
+    public String startEngine() {
+        return getClass().getName() + " -> startEngine()";
+    }
+
+    @Override
+    public String accelerate() {
+        return getClass().getName() + " -> accelerate()";
+    }
+
+    @Override
+    public String brake() {
+        return getClass().getName() + " -> brake()";
     }
 }
 
 public class PolyCarChallenge {
     public static void main(String[] args){
+        Cars cars = new Cars(8, "Base car");
+        System.out.println(cars.startEngine());
+        System.out.println(cars.accelerate());
+        System.out.println(cars.brake());
+
+        Subaru subaru = new Subaru(4, "Legacy B4 TT");
+        System.out.println(subaru.startEngine());
+        System.out.println(subaru.accelerate());
+        System.out.println(subaru.brake());
+
+        Toyota toyota = new Toyota(6, "Mark X");
+        System.out.println(toyota.startEngine());
+        System.out.println(toyota.accelerate());
+        System.out.println(toyota.brake());
 
     }
+
 }
