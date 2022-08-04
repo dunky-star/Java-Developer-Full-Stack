@@ -2,6 +2,7 @@ package oopMasterChallenge;
 
 /**
  * OOP Challenge (Wrapping up all concepts of OOP into one).
+ * A better solution for this would be to use (List) or [Array].
  */
 
 public class Hamburger {
@@ -66,5 +67,7 @@ public class Hamburger {
             hamburgerPrice += this.addition4Price;
             System.out.println("Added " + this.addition4Name + " for an extra " + this.addition4Price);
         }
+        return hamburgerPrice;
     }
+
 }
