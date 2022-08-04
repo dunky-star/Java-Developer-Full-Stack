@@ -73,17 +73,17 @@ class Toyota extends Cars{
 
     @Override
     public String startEngine() {
-        return getClass().getName() + " -> startEngine()";
+        return getClass().getSimpleName() + " -> startEngine()";
     }
 
     @Override
     public String accelerate() {
-        return getClass().getName() + " -> accelerate()";
+        return getClass().getSimpleName() + " -> accelerate()";
     }
 
     @Override
     public String brake() {
-        return getClass().getName() + " -> brake()";
+        return getClass().getSimpleName() + " -> brake()";
     }
 }
 
