@@ -1,5 +1,7 @@
 package LockedMe;
 
+import java.io.File;
+
 /**
  * @author: Geoffrey Duncan Opiyo.
  * @since: Jul. 31, 2022.
@@ -15,4 +17,8 @@ package LockedMe;
  */
 
 public class LockedMeRetrieval {
+    public static void main(String[] args){
+        File myFiles = new File("dunky.txt");
+
+    }
 }
