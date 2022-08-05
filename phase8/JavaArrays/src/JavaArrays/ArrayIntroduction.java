@@ -1,5 +1,6 @@
 package JavaArrays;
 
+
 /**
  * @author: Geoffrey Duncan O.
  * Arrays allow us to store multiple values of the same data type.
@@ -8,5 +9,9 @@ package JavaArrays;
  * It works for all primitive types and even objects like a String.
  */
 
-public class ArrayChallenge1 {
+public class ArrayIntroduction {
+    public static void main(String[] args){
+        int[] myIntArray = new int[10];
+        myIntArray[5] = 50;
+    }
 }
