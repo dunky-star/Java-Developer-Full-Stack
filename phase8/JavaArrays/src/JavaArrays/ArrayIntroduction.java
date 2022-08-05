@@ -10,17 +10,21 @@ package JavaArrays;
 
 public class ArrayIntroduction {
     public static void main(String[] args){
-        int[] myIntArray = new int[5];
+        int[] myIntArray = new int[10];
+
         myIntArray[0] = 10;
         myIntArray[1] = 20;
         myIntArray[2] = 30;
         myIntArray[3] = 40;
         myIntArray[4] = 50;
-        double[] myDoubleArray = new double[5];
-        System.out.println("The array at index[0] is " + myIntArray[0] + "\n");
+
+        // Alternatively. Array can be defined directly with curly braces as:
+        double[] myDoubleArray = {1.0, 2.0, 3.0, 4.0, 5.0, 60.0, 70.0,80.0, 90.5};
+
+        System.out.println("The myDoubleArray at index[5] is " + myDoubleArray[5] + "\n");
         System.out.println("===========================");
 
-        for(int i = 0; i < myIntArray.length; i++){
+        for(int i = 0; i < myIntArray.length - 5; i++){
         System.out.println("The array at index# " + i + " is " + myIntArray[i]);
         }
     }
