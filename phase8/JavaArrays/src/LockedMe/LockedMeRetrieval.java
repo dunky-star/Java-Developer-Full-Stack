@@ -12,8 +12,6 @@ import java.io.File;
  * 3. Option to search a user specified file from the application.
  * 4. Navigation option to close the current execution context and return to the main context.
  * 5. Option to close the application.
- *
- *
  */
 
 public class LockedMeRetrieval {
