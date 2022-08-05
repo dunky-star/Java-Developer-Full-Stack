@@ -1,4 +1,6 @@
-/* Written by: Geoffrey Duncan Opiyo
+/**
+ * @author: Geoffrey Duncan Opiyo.
+ * @since: Java 17 (2022).
 * EXERCISE: Create an array of objects of the Student class, of size 10
 * Create 10 objects of the Student class, with values, and assign the objects to the array.
 * Loop through the array and print the name, age, and roll number of all students:
