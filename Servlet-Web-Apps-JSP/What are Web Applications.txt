@@ -1,0 +1,4 @@
+What are web applications?
+-> A web site where the HTML pages are generated automatically based on the use's actions
+
+[Browser <--> Web Server <--> Database]
