@@ -6,6 +6,7 @@ package JavaArrays;
  * It's a data structure that allows you to store sequence of values that hold same type.
  * Eg: An array of integers, an array of characters, an array of Strings, etc.
  * It works for all primitive types and even objects like a String.
+ * An array with n elements is indexed from 0 to n - 1.
  */
 
 public class ArrayIntroduction {
