@@ -1,0 +1,9 @@
+Desc: *Build a JDBC Database Web App with JSP and Servlets - 
+       CRUD: query, insert, update and delete using MVC design pattern*
+--- JSP/Servlets - Development environment.
+--- Explore JSP scripting elelments.
+--- Reading HTML form data with JSP.
+--- Manage application state with Cookies and Sessions.
+--- Integrate the JSP Standard Tag Library (JSTL) to minimize scriptlet code.
+--- Multi-Lingual app using Internationalization and JSTL
+--- etc.
