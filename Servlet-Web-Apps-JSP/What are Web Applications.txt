@@ -18,5 +18,8 @@ Popular MVC frameworks are actually built on top of JSP and Servlets.
  
  HOW TO CREATE A WEB PROJECT IN ECLIPSE IDE:
  *******************************************
- File > New > Dynamic Web Project
+ File > New > Dynamic Web Project.
+ * JSP expression. <%= %>
+ * JSP scriptlets. <%  %>
+ * JSP declaration (Allows you to declare a method in a JSP page, then call the method from the same JSP page). <%! // declare a method %>
  
