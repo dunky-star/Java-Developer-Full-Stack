@@ -2,3 +2,21 @@ What are web applications?
 -> A web site where the HTML pages are generated automatically based on the use's actions
 
 [Browser <--> Web Server <--> Database]
+
+What is a Servlet? (http://localhost:8080) - Apache Tomcat.
+A Servlet is any Java class extending class Servlet.
+
+JSPs and Servlets are the key components of Java Enterprise Edition (JEE).
+
+Popular MVC frameworks are actually built on top of JSP and Servlets.
+ * Spring
+ * JSF
+ * Struts
+ 
+ - https://real-world-java-ee.zeef.com/arjan.tijms
+ 
+ 
+ HOW TO CREATE A WEB PROJECT IN ECLIPSE IDE:
+ *******************************************
+ File > New > Dynamic Web Project
+ 
