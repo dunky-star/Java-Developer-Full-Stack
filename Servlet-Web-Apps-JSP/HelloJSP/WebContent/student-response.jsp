@@ -12,8 +12,10 @@
 	<ul>
 		<%
 		String[] langs = request.getParameterValues("favoriteGames");
-		for (String tempLangs : langs){
-			out.println("<li>" + tempLangs + "</li>");
+		if (langs != null) {
+		  for (String tempLangs : langs){
+			  out.println("<li>" + tempLangs + "</li>");
+		  }
 		}
 		%>
 	</ul>
