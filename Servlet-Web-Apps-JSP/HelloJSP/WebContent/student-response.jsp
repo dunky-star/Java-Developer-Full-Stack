@@ -3,10 +3,19 @@
 <title>Student Confirmation Title</title>
 </head>
 <body>
-The student is confirmed: ${param.firstName} ${param.lastName}
-<br></br>
-The student's country: ${param.country}
-<br></br>
-Favorite progrmming language: ${param.favProgrammingLanguage}
+	The student is confirmed: ${param.firstName} ${param.lastName}
+	<br></br> The student's country: ${param.country}
+	<br></br> Favorite progrmming language: ${param.favProgrammingLanguage}
+	<br></br>
+	<!-- Display list of favorite games -->
+	The Favorite sports is/are:
+	<ul>
+		<%
+		String[] langs = request.getParameterValues("favoriteGames");
+		for (String tempLangs : langs){
+			out.println("<li>" + tempLangs + "</li>");
+		}
+		%>
+	</ul>
 </body>
 </html>
