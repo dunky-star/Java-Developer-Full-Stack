@@ -1,6 +1,7 @@
 <%@ page import="com.dunky.jsp.*" %>
 
 <html>
+
 <body>
 <jsp:include page="my-header.html" />
 
@@ -10,6 +11,8 @@
 Request user agent: <%= request.getHeader("User-Agent") %>
 <br></br>
 Request language: <%= request.getLocale() %>
+<br></br>
+
 <br></br>
 
 Let's have some fun: <%= FunUtils.makeItLower("<b>Coding is Fun</b>") %>
