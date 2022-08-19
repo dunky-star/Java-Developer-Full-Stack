@@ -21,7 +21,8 @@
 		out.println("<br><br/> I really love to code " + i);
 	}
 	%>
-
+    <br></br>
+	<a href="student-form.html">Go to student page</a>
 	<jsp:include page="my-footer.jsp" />
 </body>
 </html>

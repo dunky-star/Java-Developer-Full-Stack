@@ -28,3 +28,8 @@ Popular MVC frameworks are actually built on top of JSP and Servlets.
  --> JSP session is created once for user's browser session. Unique for this user.
      Commonly used when you need to keep track of user's actions (Eg: in online Cart apps, online banking apps, onlie exams).
  
+What are the purpose of Cookies?
+--> Personalize a web site for a user.
+    Keep track of user preferences. Eg: Favorite departure airport.
+	Cookie works in name, value pair mechanism.
+    There is always a maximum of 20 Cookies per user per site.

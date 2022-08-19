@@ -1,3 +1,4 @@
+<%@ page import="java.util.*" %>
 <html>
 <head>
 <title>Student Confirmation Title</title>
@@ -19,5 +20,20 @@
 		}
 		%>
 	</ul>
+	<!-- Cookie mechanism -->
+	<%
+	String favLang = request.getParameter("favProgrammingLanguage");
+	// Create Cookie
+	Cookie theCookie = new Cookie("myApp.favProgrammingLanguage", favLang);
+	// Set life span... the total number of seconds
+	theCookie.setMaxAge(60*60*24*365);
+	// Send Cookie to the browser
+	response.addCookie(theCookie);
+	%>
+	<br></br>
+	Thanks, we set your favorite language to: ${param.favProgrammingLanguage}
+	<br></br>
+	<a href="homepage.jsp">Return to home page</a>
+	
 </body>
 </html>
