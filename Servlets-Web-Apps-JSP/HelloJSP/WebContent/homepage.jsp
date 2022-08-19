@@ -22,6 +22,47 @@
 	}
 	%>
     <br></br>
+    <!-- Reading favorite programming language Cookie -->
+    <%
+    // The default... if there are no Cookies
+    String favLang = "Java";
+    // Get the Cookies from Browser request
+    Cookie[] theCookies = request.getCookies();
+    // Find our favorite language cookie
+    if(theCookies != null){
+    	for (Cookie tempCookie : theCookies){
+    		if("myApp.favProgrammingLanguage".equals(tempCookie.getName())){
+    			favLang = tempCookie.getValue();
+    			break;
+    		}
+    	}
+    }
+    %>
+    <br></br>
+    <!-- Now show a personalize page ... use the "favLang" variable -->
+    
+    <!-- Show new books for the favorite language -->
+    <h4>New Books for <%= favLang %> </h4>
+    <ul>
+      <li>Books Books Books</li>
+      <li>Just a place holder</li>
+    </ul>
+    <!-- Show the latest news for the favorite language -->
+    <h4>Latest News Report for <%= favLang %> </h4>
+    <ul>
+      <li>News News News</li>
+      <li>Blah Blah Blah</li>
+      <li>Just a place holder</li>
+    </ul>
+    <!-- Show the hot jobs for the favorite language -->
+    <h4>Hot Jobs for <%= favLang %> </h4>
+    <ul>
+      <li>Jobs Jobs Jobs</li>
+      <li>Blah Blah Blah</li>
+      <li>Just a place holder</li>
+    </ul>
+    <hr>      
+    <br></br>
 	<a href="student-form.html">Go to student page</a>
 	<jsp:include page="my-footer.jsp" />
 </body>

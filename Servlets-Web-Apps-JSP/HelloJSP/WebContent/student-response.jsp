@@ -33,7 +33,7 @@
 	<br></br>
 	Thanks, we set your favorite language to: ${param.favProgrammingLanguage}
 	<br></br>
-	<a href="homepage.jsp">Return to home page</a>
+	<a href="homepage.jsp">Show personalized home page</a>
 	
 </body>
 </html>
