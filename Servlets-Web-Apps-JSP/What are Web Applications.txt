@@ -23,3 +23,8 @@ Popular MVC frameworks are actually built on top of JSP and Servlets.
  * JSP scriptlets. <%  %>
  * JSP declaration (Allows you to declare a method in a JSP page, then call the method from the same JSP page). <%! // declare a method %>
  
+ 
+ JSP Sessions:
+ --> JSP session is created once for user's browser session. Unique for this user.
+     Commonly used when you need to keep track of user's actions (Eg: in online Cart apps, online banking apps, onlie exams).
+ 
