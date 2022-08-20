@@ -35,7 +35,7 @@ What are the purpose of Cookies?
     There is always a maximum of 20 Cookies per user per site.
 	
 What are JSP Tags (JSTL)?
---> JSP cutom tag and JSP Standard Tag Library (minimize the amount of Scriptlet code in JSP, avoid dumping of thousands of line of code in JSP,
+--> JSP custom tag and JSP Standard Tag Library (minimize the amount of Scriptlet code in JSP, avoid dumping of thousands of line of code in JSP,
 Tag reusable).
 Install JSTL Jar files to: WebContent>Web-INF>lib
 Here are the links:
