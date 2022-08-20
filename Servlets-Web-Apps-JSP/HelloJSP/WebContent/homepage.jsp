@@ -53,17 +53,18 @@
     <h4>Latest News Report for <%= favLang %> </h4>
     <ul>
       <%
-	    // just create some sample data to demonstrate forEach JSTL ...normally provided by MVC
+	    // just create some sample data to demonstrate looping with forEach JSTL ...normally provided by MVC
 	    String[] news = {"Kampala Mobile Money", "Kenya pesa", "Philadelphia programmers"};
 
 	    pageContext.setAttribute("myNews", news);
         %>
         <c:forEach var="tempNews" items="${myNews}">
 		
-		${tempNews} <br/>
+		<li>${tempNews}</li>
 		
-	</c:forEach>
+	    </c:forEach>
     </ul>
+ 
     <!-- Show the hot jobs for the favorite language -->
     <h4>Hot Jobs for <%= favLang %> </h4>
     <ul>
