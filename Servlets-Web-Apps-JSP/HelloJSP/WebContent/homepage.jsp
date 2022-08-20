@@ -1,6 +1,6 @@
 <%@ page import="com.dunky.jsp.*"%>
 <%@ page import="java.net.URLDecoder" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 
 <body>
@@ -52,9 +52,17 @@
     <!-- Show the latest news for the favorite language -->
     <h4>Latest News Report for <%= favLang %> </h4>
     <ul>
-      <li>News News News</li>
-      <li>Blah Blah Blah</li>
-      <li>Just a place holder</li>
+      <%
+	    // just create some sample data to demonstrate forEach JSTL ...normally provided by MVC
+	    String[] news = {"Kampala Mobile Money", "Kenya pesa", "Philadelphia programmers"};
+
+	    pageContext.setAttribute("myNews", news);
+        %>
+        <c:forEach var="tempNews" items="${myNews}">
+		
+		${tempNews} <br/>
+		
+	</c:forEach>
     </ul>
     <!-- Show the hot jobs for the favorite language -->
     <h4>Hot Jobs for <%= favLang %> </h4>
