@@ -1,4 +1,5 @@
 <%@ page import="com.dunky.jsp.*"%>
+<%@ page import="java.net.URLDecoder" %>
 
 <html>
 
@@ -32,7 +33,8 @@
     if(theCookies != null){
     	for (Cookie tempCookie : theCookies){
     		if("myApp.favProgrammingLanguage".equals(tempCookie.getName())){
-    			favLang = tempCookie.getValue();
+    			// decode cookie data ... handle case of languages with spaces in them
+                favLang = URLDecoder.decode(tempCookie.getValue(), "UTF-8");
     			break;
     		}
     	}
@@ -61,9 +63,10 @@
       <li>Blah Blah Blah</li>
       <li>Just a place holder</li>
     </ul>
-    <hr>      
+         
     <br></br>
 	<a href="student-form.html">Go to student page</a>
+	 <hr>
 	<jsp:include page="my-footer.jsp" />
 </body>
 </html>

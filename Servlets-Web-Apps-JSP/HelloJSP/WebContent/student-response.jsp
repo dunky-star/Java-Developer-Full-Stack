@@ -1,4 +1,6 @@
 <%@ page import="java.util.*" %>
+<%@ page import="java.net.URLEncoder" %>
+
 <html>
 <head>
 <title>Student Confirmation Title</title>
@@ -23,6 +25,8 @@
 	<!-- Cookie mechanism -->
 	<%
 	String favLang = request.getParameter("favProgrammingLanguage");
+	// Encode cookie data ... handle case of languages with spaces in them
+    favLang = URLEncoder.encode(favLang, "UTF-8");
 	// Create Cookie
 	Cookie theCookie = new Cookie("myApp.favProgrammingLanguage", favLang);
 	// Set life span... the total number of seconds

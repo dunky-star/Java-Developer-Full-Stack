@@ -1,3 +1,6 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <p align = "center">
-Last updated: <%= new java.util.Date() %>
+<c:set var="stuff" value="<%= new java.util.Date() %>" />
+Last updated at ${stuff}
 </p>
