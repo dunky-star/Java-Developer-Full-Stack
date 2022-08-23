@@ -60,9 +60,9 @@
         %>
         <c:forEach var="tempNews" items="${myNews}">
 		
-		<li>${tempNews}</li>
+		   <li>${tempNews}</li>
 		
-	    </c:forEach>
+	   </c:forEach>
     </ul>
  
     <!-- Show the hot jobs for the favorite language -->
