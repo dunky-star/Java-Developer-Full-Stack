@@ -62,10 +62,14 @@
 		</tr>
 	     </c:forEach>
      </table>
+     <br></br>
      
      <!-- JSTL demonstrating Function Tag -->
      <c:set var="data" value="Gulu, Kampala Vancouver, Tokyo, Washington"/>
-     <c:set var="cityArray" value="{fn:split(data, ',')}"/>
+     <c:set var="citiesArray" value="${fn:split(data, ',')}"/>
+     <c:forEach var="tempCity" items="${citiesArray}">
+		${tempCity},<br></br>
+	</c:forEach>
      
     <!-- Now show a personalize page ... use the "favLang" variable -->
     <!-- Reading favorite programming language Cookie -->
