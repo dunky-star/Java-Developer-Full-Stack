@@ -1,6 +1,6 @@
 Desc: *Build a JDBC Database Web App with JSP and Servlets - CRUD using MVC design pattern*
 --- JSP/Servlets - Development environment.
---- Explore JSP scripting elelments.
+--- Explore JSP scripting elements.
 --- Reading HTML Form Data with JSP.
 --- Manage application state with Cookies and Sessions.
 --- Integrate the JSP Standard Tag Library (JSTL) to minimize scriptlet code.
