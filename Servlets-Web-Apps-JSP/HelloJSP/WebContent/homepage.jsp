@@ -2,6 +2,7 @@
 <%@ page import="java.net.URLDecoder" %>
 <%@ page import="java.util.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <html>
 
 <body>
@@ -61,6 +62,10 @@
 		</tr>
 	     </c:forEach>
      </table>
+     
+     <!-- JSTL demonstrating Function Tag -->
+     <c:set var="data" value="Gulu, Kampala Vancouver, Tokyo, Washington"/>
+     <c:set var="cityArray" value="{fn:split(data, ',')}"/>
      
     <!-- Now show a personalize page ... use the "favLang" variable -->
     <!-- Reading favorite programming language Cookie -->
