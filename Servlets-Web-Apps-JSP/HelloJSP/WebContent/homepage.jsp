@@ -24,6 +24,7 @@
 	}
 	%>
     <br></br>
+    
     <!-- Create sample data - #ArrayList of student... normally provided by MVC -->
     <% 
      List<Student> dataStudent = new ArrayList<>();
@@ -35,11 +36,32 @@
      pageContext.setAttribute("myStudents", dataStudent);
      %>
      
-     <!-- Displaying student data -->
-     <c:forEach var="tempStudent" items="${myStudents}"> 
-     	${tempStudent.firstName} ${tempStudent.lastName} ${tempStudent.goldCustomer}<br></br>
-     </c:forEach>
-       
+     <br></br>
+     <!-- Displaying student data using JSTL tag forEach-->
+     <table border="1">
+	    <tr>
+		    <th>First Name</th>
+		    <th>Last Name</th>
+		    <th>Gold Customer</th>
+	    </tr>
+	     <c:forEach var="tempStudent" items="${myStudents}"> 
+	     <tr>
+			<td>${tempStudent.firstName}</td>
+			<td>${tempStudent.lastName}</td>
+			<td>
+				<c:if test="${tempStudent.goldCustomer}">
+					Special Discount
+				</c:if>
+				
+				<c:if test="${not tempStudent.goldCustomer}">
+					-
+				</c:if>
+				
+			</td> 
+		</tr>
+	     </c:forEach>
+     </table>
+     
     <!-- Now show a personalize page ... use the "favLang" variable -->
     <!-- Reading favorite programming language Cookie -->
     <%
