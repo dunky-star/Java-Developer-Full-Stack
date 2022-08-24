@@ -1,5 +1,6 @@
 <%@ page import="com.dunky.jsp.*"%>
 <%@ page import="java.net.URLDecoder" %>
+<%@ page import="java.util.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 
@@ -23,6 +24,23 @@
 	}
 	%>
     <br></br>
+    <!-- Create sample data - #ArrayList of student... normally provided by MVC -->
+    <% 
+     List<Student> dataStudent = new ArrayList<>();
+    
+     dataStudent.add( new Student("John", "Doe", false));
+     dataStudent.add( new Student("Kaligs", "Xcross", false));
+     dataStudent.add( new Student("Lamaro", "Arma", true));
+     
+     pageContext.setAttribute("myStudents", dataStudent);
+     %>
+     
+     <!-- Displaying student data -->
+     <c:forEach var="tempStudent" items="${myStudents}"> 
+     	${tempStudent.firstName} ${tempStudent.lastName} ${tempStudent.goldCustomer}<br></br>
+     </c:forEach>
+       
+    <!-- Now show a personalize page ... use the "favLang" variable -->
     <!-- Reading favorite programming language Cookie -->
     <%
     // The default... if there are no Cookies
@@ -41,37 +59,35 @@
     }
     %>
     <br></br>
-    <!-- Now show a personalize page ... use the "favLang" variable -->
-    
     <!-- Show new books for the favorite language -->
     <h4>New Books for <%= favLang %> </h4>
-    <ul>
-      <li>Books Books Books</li>
-      <li>Just a place holder</li>
-    </ul>
+	    <ul>
+	      <li>Books Books Books</li>
+	      <li>Just a place holder</li>
+	    </ul>
     <!-- Show the latest news for the favorite language -->
     <h4>Latest News Report for <%= favLang %> </h4>
     <ul>
-      <%
-	    // just create some sample data to demonstrate looping with forEach JSTL ...normally provided by MVC
-	    String[] news = {"Kampala Mobile Money", "Kenya pesa", "Philadelphia programmers"};
-
-	    pageContext.setAttribute("myNews", news);
-        %>
-        <c:forEach var="tempNews" items="${myNews}">
-		
-		   <li>${tempNews}</li>
-		
-	   </c:forEach>
+	      <%
+		    // just create some sample data to demonstrate looping with forEach JSTL ...normally provided by MVC
+		    String[] news = {"Kampala Mobile Money", "Kenya pesa", "Philadelphia programmers"};
+	
+		    pageContext.setAttribute("myNews", news);
+	        %>
+	        <c:forEach var="tempNews" items="${myNews}">
+			
+			   <li>${tempNews}</li>
+			
+		   </c:forEach>
     </ul>
  
     <!-- Show the hot jobs for the favorite language -->
     <h4>Hot Jobs for <%= favLang %> </h4>
-    <ul>
-      <li>Jobs Jobs Jobs</li>
-      <li>Blah Blah Blah</li>
-      <li>Just a place holder</li>
-    </ul>
+	    <ul>
+	      <li>Jobs Jobs Jobs</li>
+	      <li>Blah Blah Blah</li>
+	      <li>Just a place holder</li>
+	    </ul>
          
     <br></br>
 	<a href="student-form.html">Go to student page</a>
