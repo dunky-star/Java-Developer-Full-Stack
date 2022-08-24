@@ -1,0 +1,6 @@
+What are Servlets?
+- Java class that is processed on the server.
+- Java class generates HTML that is returned to browser.
+- Can read HTML form data, use cookies and session, etc.
+- At a high-level, similar functionality to JSPs.
+
