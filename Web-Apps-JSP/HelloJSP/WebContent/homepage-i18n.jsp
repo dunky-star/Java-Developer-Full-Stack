@@ -3,10 +3,45 @@
 <%@ page import="java.util.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+
+<%-- i18n Internationalization using JSTL tags --%>
+<c:set var="theLocale" 
+value="${not empty param.theLocale ? param.theLocale : pageContext.request.locale}"
+scope="session" />
+
+<fmt:setLocale value="${theLocale}" />
+
+<fmt:setBundle basename="com.dunky.jsp.i18n.resources.mylabels" />
+
+
+
 <html>
 
 <body>
 	<jsp:include page="my-header.html" />
+	
+	<a href="homepage-i18n.jsp?theLocale=en_US">English (US)</a>
+     |
+	<a href="homepage-i18n.jsp?theLocale=es_ES">Spanish (ES)</a>
+	 |
+	<a href="homepage-i18n.jsp?theLocale=de_DE">German (DE)</a>
+	 
+	<hr>
+	
+	<fmt:message key="label.greeting" /> <br/> <br/>
+	
+	<fmt:message key="label.firstname" /> <i>Kaligs</i> <br/>
+	
+	<fmt:message key="label.lastname" /> <i>Xcross</i> <br/><br/>
+	
+	<fmt:message key="label.welcome" /> <br/>
+	
+	<hr>
+	
+	Selected locale: ${theLocale}
+  <%-- i18n Internationalization using JSTL tags ends here--%>
 
 	<h2>Hello World of Java!</h2>
 	<h3>JSP built-in objects</h3>
