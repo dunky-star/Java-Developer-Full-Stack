@@ -15,3 +15,18 @@ BEST PRACTICE
    -> Servlet does the business logic.
    -> JSP handles the presentation view.
 2. Model-View-Controller (MVC) Design Pattern.   
+
+
+GET METHOD:
+************
+1. Very good for debugging.
+2. Bookmark or email url.
+3. Limitations on data length.
+
+POST METHOD:
+************
+1. Cannot boomark or email url.
+2. No limitations on data length.
+3. Can also send binary data.
+
+Recommendation: For non sensitive data, you can use GET method; for sensitive data, POST method is highly to be used.
