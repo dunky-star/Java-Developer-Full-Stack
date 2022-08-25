@@ -4,3 +4,7 @@ What are Servlets?
 - Can read HTML form data, use cookies and session, etc.
 - At a high-level, similar functionality to JSPs.
 
+*** Whenever we write Servlets, we can override a doGet() method or a doPost() method inherited from HttpServlet.
+doGet() method has two parameters, they pass on a request object or response object.
+
+@WebServlet("HelloServlets")  ---> is a path for defining where to load servlet from.
