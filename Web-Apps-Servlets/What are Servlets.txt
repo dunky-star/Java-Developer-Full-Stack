@@ -30,3 +30,6 @@ POST METHOD:
 3. Can also send binary data.
 
 Recommendation: For non sensitive data, you can use GET method; for sensitive data, POST method is highly to be used.
+
+
+[Servlet configuration parameters] is WEB-INF/web-xml file.

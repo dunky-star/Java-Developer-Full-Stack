@@ -3,6 +3,7 @@ package com.dunky.servletsj;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -35,12 +36,23 @@ public class StudentServlet extends HttpServlet {
 		// Step 2: Get print Writer
 		PrintWriter out = response.getWriter();
 		
-		// Step 3: Generate the HTML content
+		// Step 3: read configuration params
+		ServletContext context = getServletContext(); // inherit from HttpServlet
+		
+		String maxCartSize = context.getInitParameter("max-shopping-cart-size");
+		String teamName = context.getInitParameter("project-team-name");
+		
+		// Step 4: Generate the HTML content
 		out.println("<html><body>");
 		
 		out.println("The student is confirmed: " 
 				+ request.getParameter("firstName") + " "
 				+ request.getParameter("lastName"));
+		
+		out.println("<br/><br/>");
+		out.println("Max cart: " + maxCartSize);
+		out.println("<br/><br/>");
+		out.println("Team name: " + teamName);
 		
 		out.println("<br></br><a href=\"student-form.html\">Go back to home page</a>");
 		
