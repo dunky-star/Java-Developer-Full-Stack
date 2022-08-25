@@ -42,7 +42,8 @@ public class StudentServlet extends HttpServlet {
 				+ request.getParameter("firstName") + " "
 				+ request.getParameter("lastName"));
 		
-		out.println("<a href=\"student-form.html\">Go back to home page</a>");
+		out.println("<br></br><a href=\"student-form.html\">Go back to home page</a>");
+		
 		out.println("</body></html>");
 		
 	}
