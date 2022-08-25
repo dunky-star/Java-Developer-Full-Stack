@@ -8,3 +8,10 @@ What are Servlets?
 doGet() method has two parameters, they pass on a request object or response object.
 
 @WebServlet("HelloServlets")  ---> is a path for defining where to load servlet from.
+
+BEST PRACTICE
+**************
+1. Integrate them both together (JSP & Servlets).
+   -> Servlet does the business logic.
+   -> JSP handles the presentation view.
+2. Model-View-Controller (MVC) Design Pattern.   
