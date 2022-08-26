@@ -33,3 +33,9 @@ Recommendation: For non sensitive data, you can use GET method; for sensitive da
 
 
 [Servlet configuration parameters] is WEB-INF/web-xml file.
+
+How To Redirect from JSP to a Servlet:
+
+You can make use of the method:
+
+    response.sendRedirect( <thePageUrl> )
