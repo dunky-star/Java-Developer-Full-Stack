@@ -38,7 +38,8 @@ How To Redirect from JSP to a Servlet:
 
 You can make use of the method:
 
-    response.sendRedirect( <thePageUrl> )
+    # response.sendRedirect( <thePageUrl> )  - redirects JSP page to Servlet page.
+	# Servlet can call JSP using a request dispatcher.
 	
 
 MVC Design Pattern with Servlet and JSP.
