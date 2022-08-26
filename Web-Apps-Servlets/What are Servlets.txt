@@ -45,3 +45,8 @@ MVC Design Pattern with Servlet and JSP.
 ****************************************
 -> Servlet does the business logic.
 -> JSP handles the presentation layer.
+
+BENEFIT OF MVC:
+***************
+1. Minimizes HTML code in Servlet (no more out.println(...) in Servlet code).
+2. Minimizes Java Business Logic in JSP (no more large scriplet in JSP).
