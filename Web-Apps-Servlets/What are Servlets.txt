@@ -61,6 +61,6 @@ JDBC:
 
 STEPS IN SETTING UP JDBC:
 **************************
-1. Download JDBC driver JAR (http://dev.mysql.com/downloads).
+1. Download JDBC driver JAR (http://dev.mysql.com/downloads || https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.13.zip).
 2. Define Connection Pool in META-INF/context.xml.
 3. Get Coonection Pool reference in Java Code.
