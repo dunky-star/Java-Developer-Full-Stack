@@ -51,3 +51,16 @@ BENEFIT OF MVC:
 ***************
 1. Minimizes HTML code in Servlet (no more out.println(...) in Servlet code).
 2. Minimizes Java Business Logic in JSP (no more large scriplet in JSP).
+
+
+JDBC:
+*******
+-> Database Connections in Web apps.
+-> Database Connection Pools (Best practice is to use database connection pools - allows your app to scale and handles multiple users quickly).
+-> Setting up a Tomcat Database Connection Pool.
+
+STEPS IN SETTING UP JDBC:
+**************************
+1. Download JDBC driver JAR.
+2. Define Connection Pool in META-INF/context.xml.
+3. Get Coonection Pool reference in Java Code.
