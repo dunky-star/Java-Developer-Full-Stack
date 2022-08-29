@@ -59,6 +59,21 @@ JDBC:
 -> Database Connection Pools (Best practice is to use database connection pools - allows your app to scale and handles multiple users quickly).
 -> Setting up a Tomcat Database Connection Pool.
 
+
+Configuring jdbc-pool for high-concurrency 
+
+- https://my.oschina.net/shipley/blog/519449
+
+Real-World Tips and Tricks to Tune Apache Tomcat for High Performance
+
+https://www.eginnovations.com/blog/tomcat-performance-tuning/
+
+Optimal number of connections in connection pool 
+
+- http://stackoverflow.com/questions/1208077/optimal-number-of-connections-in-connection-pool
+
+
+
 STEPS IN SETTING UP JDBC:
 **************************
 1. Download JDBC driver JAR (http://dev.mysql.com/downloads || https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.13.zip).
