@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 import javax.annotation.Resource;
@@ -58,6 +59,15 @@ public class Test_JDBC_Conn extends HttpServlet {
 		}
 		catch (Exception exc) {
 			exc.printStackTrace();
+		}finally {
+			try {
+				if(myConn != null) {
+				myConn.close();
+				}
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			}
 		}
 	}
 
