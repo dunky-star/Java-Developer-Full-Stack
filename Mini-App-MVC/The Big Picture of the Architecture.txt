@@ -1,0 +1,7 @@
+THE APP ARCHITECTURE:
+*********************
+1. Web browser submits request to Servlet (Controller) -  student controller.
+2. Servlet controller will make use of Helper Class (Model) called [Student DbUtil] to talk to the DB.
+3. The data will come back to the controller.
+4. Controller will then forward to our JSP page (View).
+5. Finally, will send that View back to the browser for the end-user consumption. 
