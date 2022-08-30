@@ -17,8 +17,8 @@ import javax.sql.DataSource;
 /**
  * Servlet implementation class TestServlet
  */
-@WebServlet("/TestServlet")
-public class TestServlet extends HttpServlet {
+@WebServlet("/Test_JDBC_Conn")
+public class Test_JDBC_Conn extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	// Define datasource/connection pool for Resource Injection
