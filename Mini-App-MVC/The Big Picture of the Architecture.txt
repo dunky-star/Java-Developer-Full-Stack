@@ -15,4 +15,4 @@ STEPS:
 2. create Helper class (StudentDBUtil.java)
 3. create student controller servlet (StudentControllerServlet.java)
 4. create JSP page: list-student.jsp 
-5. Replace JSP scriplet codes with JSTL tags.
+5. Replace JSP Scriptlet codes with JSTL tags.
