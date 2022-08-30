@@ -5,3 +5,13 @@ THE APP ARCHITECTURE:
 3. The data will come back to the controller.
 4. Controller will then forward to our JSP page (View).
 5. Finally, will send that View back to the browser for the end-user consumption. 
+
+DB Utility (Helper Class): Responsible for interfacing with the database using JDBC code.
+-> This is a common design pattern: Data Access Object (DAO).
+
+STEPS:
+*******
+1. create Student class (Student.java)
+2. create Helper class (StudentDBUtil.java)
+3. create student controller servlet (StudentControllerServlet.java)
+4. create JSP page: list-student.jsp 
