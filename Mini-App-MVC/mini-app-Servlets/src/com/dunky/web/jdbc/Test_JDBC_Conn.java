@@ -60,15 +60,31 @@ public class Test_JDBC_Conn extends HttpServlet {
 		catch (Exception exc) {
 			exc.printStackTrace();
 		}finally {
-			try {
-				if(myConn != null) {
-				myConn.close();
-				}
-			} catch (SQLException e) {
-				
-				e.printStackTrace();
+			// close JDBC objects
+			close(myConn, myStmt, myResultSet);
+		}
+	}
+
+
+	private void close(Connection myConn, Statement myStmt, ResultSet myResultSet) {
+		
+		try {
+			if (myResultSet != null) {
+				myResultSet.close();
+			}
+			
+			if (myStmt != null) {
+				myStmt.close();
+			}
+			
+			if (myConn != null) {
+				myConn.close();   // doesn't really close it ... just puts back in connection pool
 			}
 		}
+		catch (Exception exc) {
+			exc.printStackTrace();
+		}
+		
 	}
 
 }
