@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.util.*, com.dunky.web.jdbc.*" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html>
@@ -10,10 +11,6 @@
 <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 
-<%
-	// get the students from the request object (sent by servlet)
-	List<Student> theStudents = (List<Student>) request.getAttribute("STUDENT_LIST");
-%>
 
 
 <body>
@@ -33,13 +30,13 @@
 				<th> Email Address </th>
 			</tr>
 			
-			<% for (Student tempStudent: theStudents) { %>
+			<c:forEach var="tempStudent" items = "${STUDENT_LIST}">
 				<tr>
-					<td> <%= tempStudent.getFirstName() %></td>
-					<td> <%= tempStudent.getLastName() %></td>
-					<td> <%= tempStudent.getEmail() %></td>
+					<td>${tempStudent.firstName}</td>
+					<td>${tempStudent.lastName}</td>
+					<td>${tempStudent.email}</td>
 				</tr>
-			<% } %>
+			</c:forEach>
 			
 		</table>
 	</div>
