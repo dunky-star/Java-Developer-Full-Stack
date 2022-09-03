@@ -15,7 +15,8 @@ public class ECommerceModelApplication {
 		customer.setLastName("Dunky");
 		customer.setEmail("dunky@mail.com");
 		
-		System.out.println("Last name is: " + customer.getFirstName() + " First name is: " + customer.getFirstName());
+		System.out.println("Last name is: " + customer.getFirstName() + " First name is: " + customer.getFirstName() +
+				" Customer email is: " + customer.getEmail());
 	}
 
 }
