@@ -14,6 +14,14 @@ public class User {
 		this.country = country;
 	}
 	
+	
+	public User(String name, String email, String country) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.country = country;
+	}
+
 
 	public int getId() {
 		return id;
