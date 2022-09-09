@@ -8,9 +8,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.sql.DataSource;
+
 import com.dunky.usermanagement.model.User;
 
-public class UserDao {
+public class UserDBUtil {
 
 			/**
 			 * UserDao.java This DAO class provides CRUD database operations for the
@@ -19,7 +21,7 @@ public class UserDao {
 			 * @author dunky-star
 			 *
 			 */
-			
+	     		
 			private String jdbcURL = "jdbc:mysql://localhost:3306/yohunters_db?useSSL=false";
 		    private String jdbcUsername = "webstudent";
 		    private String jdbcPassword = "webstudent";
@@ -33,7 +35,9 @@ public class UserDao {
 		    private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
 		    
 		    // Default constructor
-		    public UserDao() {}
+		    public UserDBUtil() {
+		    	
+		    }
 		    
 		    
 		    protected Connection getConnection() {
