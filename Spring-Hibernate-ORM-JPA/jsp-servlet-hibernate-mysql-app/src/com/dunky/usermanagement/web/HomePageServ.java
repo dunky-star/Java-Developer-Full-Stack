@@ -29,7 +29,8 @@ public class HomePageServ extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public HomePageServ() {
+	// Servlet Life Cylce init method
+    public void init() {  
     	userDBUtil = new UserDBUtil();
     }
     
