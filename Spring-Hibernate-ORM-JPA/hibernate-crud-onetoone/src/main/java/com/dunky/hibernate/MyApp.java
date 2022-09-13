@@ -1,3 +1,4 @@
+package com.dunky.hibernate;
 import com.dunky.hibernate.dao.InstructorDao;
 import com.dunky.hibernate.entity.Instructor;
 import com.dunky.hibernate.entity.InstructorDetail;
