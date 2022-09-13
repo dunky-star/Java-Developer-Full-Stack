@@ -5,7 +5,7 @@ import org.hibernate.Transaction;
 import com.dunky.hibernate.entity.Instructor;
 import com.dunky.hibernate.util.HibernateUtil;
 
-public class InstructordDao {
+public class InstructorDao {
 	
 	public void saveInstructor(Instructor instructor) {
         Transaction transaction = null;
