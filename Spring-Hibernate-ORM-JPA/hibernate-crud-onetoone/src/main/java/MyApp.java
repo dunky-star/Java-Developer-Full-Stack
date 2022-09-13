@@ -1,11 +1,18 @@
 import com.dunky.hibernate.dao.InstructorDao;
 import com.dunky.hibernate.entity.Instructor;
 import com.dunky.hibernate.entity.InstructorDetail;
+
 public class MyApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Instructor instructor = new Instructor("Geoffrey", "Kaligs", "dunkygeoffrey39@gmail.com");
+		InstructorDetail instructorDetail = new InstructorDetail("https://www.youtube.com/watch?v=_Sudb6Z97O8", "WRC Safari Kenya");
+        
+		instructor.setInstructorDetail(instructorDetail);
+		InstructorDao instructorDao = new InstructorDao();
+        instructorDao.saveInstructor(instructor);
+		
 	}
 
 }
