@@ -9,11 +9,17 @@ public class MyApp {
 		
 		Instructor instructor = new Instructor("Geoffrey", "Kaligs", "dunkygeoffrey39@gmail.com");
 		InstructorDetail instructorDetail = new InstructorDetail("https://www.youtube.com/watch?v=_Sudb6Z97O8", "WRC Safari Kenya");
-        
-		instructor.setInstructorDetail(instructorDetail);
-		InstructorDao instructorDao = new InstructorDao();
-        instructorDao.saveInstructor(instructor);
 		
+		 // associate the objects
+        instructorDetail.setInstructor(instructor);
+        // associate the objects
+        instructor.setInstructorDetail(instructorDetail);
+
+        // when you get instructorDetail then hibernate also saves instructor info
+        InstructorDao instructorDao = new InstructorDao();
+        instructorDao.saveInstructor(instructor);
+                
+        		
 	}
 
 }

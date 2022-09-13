@@ -3,10 +3,10 @@ package com.dunky.hibernate.entity;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -29,8 +29,7 @@ public class Instructor {
 	    @Column(name = "email")
 	    private String email;
 
-	    @OneToOne(cascade = CascadeType.ALL)
-	    @JoinColumn(name = "instructor_detail_id")
+	    @OneToOne(cascade = CascadeType.ALL, mappedBy = "instructor", fetch = FetchType.LAZY)
 	    private InstructorDetail instructorDetail;
 
 	    public Instructor() {
