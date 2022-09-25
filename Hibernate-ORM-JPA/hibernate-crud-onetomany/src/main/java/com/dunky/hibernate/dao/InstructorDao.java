@@ -13,7 +13,7 @@ public class InstructorDao {
 	        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 	            // start a transaction
 	            transaction = session.beginTransaction();
-	            // save the student object
+	            // save the instructor object
 	            session.save(instructor);
 	            // commit transaction
 	            transaction.commit();
