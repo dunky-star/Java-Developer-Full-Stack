@@ -10,7 +10,7 @@ public class TestJdbc {
 		String user = "webstudent";
 		String pass = "webstudent";
 		try {
-			System.out.println("Connecting to database" +jdbcUrl);
+			System.out.println("Connecting to database " + jdbcUrl);
 			Connection myConn =
 					DriverManager.getConnection(jdbcUrl, user, pass);
 			System.out.println("Connection successful!!!");
