@@ -11,7 +11,7 @@ public class BaseballCoach implements Coach {
 		
 	// define a constructor for dependency injection
 	public BaseballCoach(FortuneService theFortuneService) {
-		fortuneService = theFortuneService;
+		this.fortuneService = theFortuneService;
 	}
 		
 	
