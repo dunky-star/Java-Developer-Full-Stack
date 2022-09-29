@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+@RequestMapping("/hello")
 public class HelloWorldController {
 
 	// need a controller method to show the initial HTML form
@@ -28,7 +29,7 @@ public class HelloWorldController {
 		theName = theName.toUpperCase();
 		
 		// create the message
-		String result = "Yo! " + theName;
+		String result = "Yo! Hello, my friend " + theName;
 		
 		// add message to the model
 		model.addAttribute("message", result);

@@ -7,7 +7,9 @@
 
 <hr>
 
-<a href="showForm">Show Form</a>
+<a href="hello/showForm">Show Form</a>
+<br><br>
+<a href="student/showForm">Student Form</a>
 </body>
 
 </html>
