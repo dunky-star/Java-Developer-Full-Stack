@@ -1,4 +1,4 @@
-package com.dunky.springone;
+package com.dunky.spring.annotations;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -10,7 +10,7 @@ public class SpringApp {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// retrieve bean from spring container
-		Coach theCoach = context.getBean("myCoach", Coach.class);
+		Coach theCoach = context.getBean("thatBaseballCoach", Coach.class);
 				
 		// call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());

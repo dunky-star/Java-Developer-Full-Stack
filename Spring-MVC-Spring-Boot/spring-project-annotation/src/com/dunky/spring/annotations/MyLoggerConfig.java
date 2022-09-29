@@ -1,4 +1,4 @@
-package com.dunky.springone;
+package com.dunky.spring.annotations;
 
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;

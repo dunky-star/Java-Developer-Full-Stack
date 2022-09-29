@@ -1,6 +1,8 @@
-package com.dunky.springone;
+package com.dunky.spring.annotations;
 
+import org.springframework.stereotype.Component;
 
+@Component("thatBaseballCoach")
 public class BaseballCoach implements Coach {
 	
 	public BaseballCoach() {
@@ -11,7 +13,7 @@ public class BaseballCoach implements Coach {
 		
 	// define a constructor for dependency injection
 	public BaseballCoach(FortuneService theFortuneService) {
-		this.fortuneService = theFortuneService;
+		fortuneService = theFortuneService;
 	}
 		
 	

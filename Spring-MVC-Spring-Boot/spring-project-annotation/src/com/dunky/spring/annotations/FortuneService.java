@@ -1,4 +1,4 @@
-package com.dunky.springone;
+package com.dunky.spring.annotations;
 
 public interface FortuneService {
 	
