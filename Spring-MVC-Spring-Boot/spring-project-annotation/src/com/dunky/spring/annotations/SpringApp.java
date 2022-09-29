@@ -1,26 +1,27 @@
 package com.dunky.spring.annotations;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class SpringApp {
 
 	public static void main(String[] args) {
+
+		// read spring config java class
+		AnnotationConfigApplicationContext context = 
+				new AnnotationConfigApplicationContext(SportConfig.class);
 		
-		// load the spring configuration file
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		// get the bean from spring container
+		Coach theCoach = context.getBean("swimCoach", Coach.class);
 		
-		// retrieve bean from spring container
-		Coach theCoach = context.getBean("thatBaseballCoach", Coach.class);
-				
-		// call methods on the bean
+		// call a method on the bean
 		System.out.println(theCoach.getDailyWorkout());
-		
-		// let's call our new method for fortunes
-		System.out.println(theCoach.getDailyFortune());
 				
+		// call method to get the daily fortune
+		System.out.println(theCoach.getDailyFortune());
+					
 		// close the context
 		context.close();
-
+		
 	}
 
 }
