@@ -32,10 +32,8 @@
 
 		Favorite Language:
 		
-		Java <form:radiobutton path="favoriteLanguage" value="Java" />
-		C <form:radiobutton path="favoriteLanguage" value="C" />
-		PHP <form:radiobutton path="favoriteLanguage" value="PHP" />
-		Rust <form:radiobutton path="favoriteLanguage" value="Rust" />
+		<form:radiobuttons path="favoriteLanguage" 
+		items="${student.favoriteLanguageOptions}"  />
 
 		<br><br>
 	
