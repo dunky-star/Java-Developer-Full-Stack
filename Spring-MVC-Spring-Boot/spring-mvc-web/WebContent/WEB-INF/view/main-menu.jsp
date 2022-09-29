@@ -1,21 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Spring MVC - Java 17</title>
-</head>
-<body>
-<h2>Spring MVC - Main Page</h2>
 
-    <form action="processForm" method="GET">
-	
-		<input type="text" name="studentName"
-			placeholder="What's your name?" />
-			
-		<input type="submit" />
-			
-	</form>
+<body>
+
+<h2>Spring MVC Demo - Home Page</h2>
+
+<hr>
+
+<a href="showForm">Show Form</a>
 </body>
+
 </html>
