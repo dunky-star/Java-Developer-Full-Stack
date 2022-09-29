@@ -16,17 +16,11 @@ public class HelloWorldController {
 		return "helloworld-form";
 	}
 		
-	// need a controller method to process the HTML form
-	
-	@RequestMapping("/processForm")
-	public String processForm() {
-		return "helloworld";
-	}
 
 	// new a controller method to read form data and
 	// add data to the model
 
-	@RequestMapping("/processFormVersion")	
+	@RequestMapping("/processForm")	
 	public String letsShout(HttpServletRequest request, Model model) {
 		
 		// read the request parameter from the HTML form

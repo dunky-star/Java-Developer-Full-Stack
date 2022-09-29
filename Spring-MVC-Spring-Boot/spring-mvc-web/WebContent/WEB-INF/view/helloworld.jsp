@@ -13,6 +13,10 @@ Student name: ${param.studentName}
 
 The message: ${message}
 
+<br><br>
+
+<a href="main-menu.jsp">Main Page</a>
+
 </body>
 
 </html>
