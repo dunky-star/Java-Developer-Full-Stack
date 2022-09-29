@@ -27,7 +27,7 @@ public class HelloWorldController {
 	// add data to the model
 
 	@RequestMapping("/processFormVersion")	
-	public String letsShoutDude(HttpServletRequest request, Model model) {
+	public String letsShout(HttpServletRequest request, Model model) {
 		
 		// read the request parameter from the HTML form
 		String theName = request.getParameter("studentName");
