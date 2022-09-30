@@ -2,9 +2,19 @@ package com.dunky.spring.mvc;
 
 import java.util.LinkedHashMap;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+
+
 public class Student {
 
+	@NotNull(message="is required")
+	@Size(min=1)
 	private String firstName;
+	
+	@NotNull(message="is required")
+	@Size(min=1)
 	private String lastName;
 	private String country;
 	private String favoriteLanguage;

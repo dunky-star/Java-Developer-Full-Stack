@@ -6,17 +6,23 @@
 
 <head>
 	<title>Student Registration Form</title>
+	<style>
+		.error {color:red}
+	</style>
 </head>
 
 <body>
+	<i>Fill out the form. Asterisk(*) means required.</i>
 
 	<form:form action="processForm" modelAttribute="student">
 	
-		First name: <form:input path="firstName" />
+		First name (*): <form:input path="firstName" />
+		<form:errors path="firstName" cssClass="error" />
 		
 		<br><br>
 	
-		Last name: <form:input path="lastName" />
+		Last name (*): <form:input path="lastName" />
+		<form:errors path="lastName" cssClass="error" />
 		
 		<br><br>
 	

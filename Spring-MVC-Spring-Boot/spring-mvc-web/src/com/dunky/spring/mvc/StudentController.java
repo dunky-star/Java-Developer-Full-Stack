@@ -1,13 +1,32 @@
 package com.dunky.spring.mvc;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
+import org.springframework.web.bind.WebDataBinder;
 
 @Controller
 @RequestMapping("/student")
 public class StudentController {
+	
+	// add an initbinder ... to convert trim input strings
+	// remove leading and trailing whitespace
+	// resolve issue for our validation
+		
+	@InitBinder
+	public void initBinder(WebDataBinder dataBinder) {
+			
+		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+			
+		dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+	}
 
 	@RequestMapping("/showForm")
 	public String showForm(Model theModel) {
@@ -22,13 +41,20 @@ public class StudentController {
 	}
 	
 	@RequestMapping("/processForm")
-	public String processForm(@ModelAttribute("student") Student theStudent) {
+	public String processForm(@Valid @ModelAttribute("student") Student theStudent,
+			BindingResult theBindingResult) {
 		
 		// log the input data
 		System.out.println("theStudent: " + theStudent.getFirstName()
 							+ " " + theStudent.getLastName());
 		
-		return "student-confirmation";
+		if (theBindingResult.hasErrors()) {
+			return "student-form";
+		}
+		else {
+			return "student-confirmation";
+		}
+		
 	}
 	
 }
