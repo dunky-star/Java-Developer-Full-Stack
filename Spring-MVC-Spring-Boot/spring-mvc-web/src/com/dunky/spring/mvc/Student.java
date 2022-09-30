@@ -10,11 +10,11 @@ import javax.validation.constraints.Size;
 public class Student {
 
 	@NotNull(message="is required")
-	@Size(min=1)
+	@Size(min=1, message="is required")
 	private String firstName;
 	
 	@NotNull(message="is required")
-	@Size(min=1)
+	@Size(min=1, message="is required")
 	private String lastName;
 	private String country;
 	private String favoriteLanguage;
