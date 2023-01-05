@@ -6,12 +6,12 @@ import java.util.Random;
 public class ReturnRandomArray {
     public static void main(String[] args){
 
-        // The method call to produce first array.
-        int[] firstArray = getRandomArray(20);
+        // The method call to produce unsorted array.
+        int[] unsortedArray = getRandomArray(20);
         // Sorting the array.
-        Arrays.sort(firstArray);
+        Arrays.sort(unsortedArray);
         // Printing sorted result.
-        System.out.println("\nFirst Array:" + Arrays.toString(firstArray) + " \n");
+        System.out.println("\nSorted Array:" + Arrays.toString(unsortedArray) + " \n");
 
         int[] thirdArray = getRandomArray(10);
         System.out.println("Third Array:" + Arrays.toString(thirdArray) + " \n");
