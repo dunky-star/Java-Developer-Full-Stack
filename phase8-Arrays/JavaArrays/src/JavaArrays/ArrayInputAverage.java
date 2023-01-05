@@ -10,7 +10,7 @@ public class ArrayInputAverage {
     private static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int[] myIntegers = getIntegers(5);
+        int[] myIntegers = getNumbers(5);
         for (int i = 0; i < myIntegers.length; i++) {
             System.out.println("Element " + i + ", typed value was " + myIntegers[i]);
         }
@@ -18,7 +18,7 @@ public class ArrayInputAverage {
     }
 
     // Method for getting values from the keyboard.
-    public static int[] getIntegers(int number) {
+    public static int[] getNumbers(int number) {
         System.out.println("Enter " + number + " integer values:\r");
         int[] values = new int[number];
         for (int i = 0; i < values.length; i++) {

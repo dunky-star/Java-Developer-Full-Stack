@@ -16,11 +16,12 @@ import java.util.Scanner;
 public class ArrayChallenge1 {
     private static final Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
+        // Reading integer from the keyboard input.
         int[] myIntegers = getIntegers(5);
-        // sorting method call
+        // sorting method call.
         int[] sorted = sortIntegers(myIntegers);
-        // Displaying result by printArray call
+        // Displaying result by printArray call.
         printArray(sorted);
 
     }
