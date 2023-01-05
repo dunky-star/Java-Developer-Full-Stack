@@ -9,8 +9,11 @@ public class MinNumberChallenge {
         int[] returnedArray = readIntegers();
         System.out.println(Arrays.toString(returnedArray));
 
-        int returnedMin = findMin(returnedArray);
-        System.out.println("min = " + returnedMin);
+        // int returnedMin = findMin(returnedArray);
+        // System.out.println("min = " + returnedMin);
+        reverse(returnedArray);
+        System.out.println("Final: " + Arrays.toString(returnedArray));
+
     }
 
     private static int[] readIntegers() {
@@ -39,5 +42,17 @@ public class MinNumberChallenge {
         }
 
         return min;
+    }
+
+    private static void reverse(int[] array){
+        int maxIndex = array.length-1;
+        int halfLength = array.length/2;
+
+        for (int i =0 ; i < halfLength; i++){
+            int temp = array[i];
+            array[i] = array[maxIndex-i];
+            array[maxIndex-i] = temp;
+            System.out.println("--->" + Arrays.toString(array));
+        }
     }
 }
