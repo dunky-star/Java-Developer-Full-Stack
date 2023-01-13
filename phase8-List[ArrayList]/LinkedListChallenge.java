@@ -37,7 +37,7 @@ public class LinkedListChallenge {
         addPlace(placesToVisit, new Place("Melbourne", 877));
 
         placesToVisit.addFirst(new Place("Sydney", 0));
-        System.out.println("\n" + placesToVisit);
+        System.out.println("\n" + placesToVisit + "\n");
 
         var iterator = placesToVisit.listIterator();
         Scanner scanner = new Scanner(System.in);
