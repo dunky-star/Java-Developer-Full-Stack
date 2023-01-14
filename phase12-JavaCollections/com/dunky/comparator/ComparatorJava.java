@@ -1,4 +1,4 @@
-package com.dunky;
+package com.dunky.comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
