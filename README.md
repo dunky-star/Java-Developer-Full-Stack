@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# Full Stack Java Developer
-=======
-## Java Full Stack Developer - Simplilearn
+## Full Stack Java Developer - Simplilearn
 
 > My full stack journey, the essence of front-end, middleware, and back-end Java web developer technologies.
 An end-to-end application dev., test and deploy code, store data and much more.
@@ -41,5 +38,3 @@ An end-to-end application dev., test and deploy code, store data and much more.
 Released under BSD-3-Clause license.
 
 (c) Geoffrey Duncan Opiyo
-
->>>>>>> file-search-algo
