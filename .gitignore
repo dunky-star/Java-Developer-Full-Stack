@@ -2,7 +2,11 @@
 *.iml
 out/
 secret.txt
+<<<<<<< HEAD
 .metadata
 Servers/
 /build/
 .settings/
+=======
+.metadata/
+>>>>>>> file-search-algo
