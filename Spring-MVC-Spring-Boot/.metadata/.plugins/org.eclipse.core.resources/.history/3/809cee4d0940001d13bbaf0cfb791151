@@ -1,0 +1,5 @@
+package com.dunky.spring.mvc;
+
+public class HelloWorldController {
+
+}

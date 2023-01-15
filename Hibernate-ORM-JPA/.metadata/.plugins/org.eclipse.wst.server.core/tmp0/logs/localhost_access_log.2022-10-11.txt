@@ -1,0 +1,13 @@
+127.0.0.1 - - [11/Oct/2022:20:20:37 +0300] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:20:54 +0300] "GET /jsp-servlet-hibernate-mysql-app/ HTTP/1.1" 200 667
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:20:54 +0300] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:21:06 +0300] "GET /jsp-servlet-hibernate-mysql-app/new HTTP/1.1" 200 1499
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:21:14 +0300] "POST /jsp-servlet-hibernate-mysql-app/insert HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:21:14 +0300] "GET /jsp-servlet-hibernate-mysql-app/list HTTP/1.1" 200 1111
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:21:18 +0300] "GET /jsp-servlet-hibernate-mysql-app/edit?id=1 HTTP/1.1" 200 1597
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:21:34 +0300] "GET /jsp-servlet-hibernate-mysql-app/new HTTP/1.1" 200 1499
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:21:36 +0300] "GET /jsp-servlet-hibernate-mysql-app/list HTTP/1.1" 200 1111
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:21:37 +0300] "GET /jsp-servlet-hibernate-mysql-app/new HTTP/1.1" 200 1499
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:21:38 +0300] "GET /jsp-servlet-hibernate-mysql-app/list HTTP/1.1" 200 1111
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:21:39 +0300] "GET /jsp-servlet-hibernate-mysql-app/delete?id=1 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2022:20:21:39 +0300] "GET /jsp-servlet-hibernate-mysql-app/list HTTP/1.1" 200 667

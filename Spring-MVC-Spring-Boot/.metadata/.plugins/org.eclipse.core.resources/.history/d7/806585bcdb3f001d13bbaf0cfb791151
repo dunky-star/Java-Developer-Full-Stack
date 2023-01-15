@@ -1,0 +1,4 @@
+package com.dunky.spring.annotations;
+
+root.logger.level=FINE
+printed.logger.level=FINE

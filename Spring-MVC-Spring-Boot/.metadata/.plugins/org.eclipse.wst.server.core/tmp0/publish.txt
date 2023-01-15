@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Fri Sep 30 16:28:00 EAT 2022
+org.eclipse.jst.jee.server\:/binary\:D\:\\WebDev\\MastersJava\\Java-Developer-Full-Stack\\Spring-MVC-Spring-Boot\\spring-mvc-web\\WebContent\\WEB-INF\\lib\\spring-web-5.3.9.jar=WEB-INF/lib/spring-web-5.3.9.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\WebDev\\MastersJava\\Java-Developer-Full-Stack\\Spring-MVC-Spring-Boot\\spring-mvc-web\\WebContent\\WEB-INF\\lib\\spring-web-5.3.9-sources.jar=WEB-INF/lib/spring-web-5.3.9-sources.jar
