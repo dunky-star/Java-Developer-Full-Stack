@@ -4,7 +4,16 @@
 An end-to-end application dev., test and deploy code, store data and much more.
 
 	
-	**The following skills were learnt:**
+	LEARNING PATH:
+		
+		Phase-1: Implement OOPS using JAVA with Data Structures and Beyond
+		Phase-2: Become a back-end expert
+		Phase-3: Implement Frameworks the DevOps way
+		Phase-4: Develop a Web Application using frontend stack
+		Phase-5: Testing in a DevOps Lifecycle
+		Full Stack Java Developer Capstone Project
+		
+	THE FOLLOWING SKILLS WERE LEARNT:
 
 		+ Agile
 		+ Java
@@ -22,15 +31,6 @@ An end-to-end application dev., test and deploy code, store data and much more.
 		+ Basic Spring security
 		+ REST API dev't
 		+ DevOps (Jenkins - CI/CD, Selenium FSD, Docker, Kubernetes)
-
-	**LEARNING PATH:**
-		
-		 Phase-1: Implement OOPS using JAVA with Data Structures and Beyond
-		 Phase-2: Become a back-end expert
-		 Phase-3: Implement Frameworks the DevOps way
-		 Phase-4: Develop a Web Application using frontend stack
-		 Full Stack Java Developer Capstone Project
-		 Phase-5: Testing in a DevOps Lifecycle
 
 
 ### License
