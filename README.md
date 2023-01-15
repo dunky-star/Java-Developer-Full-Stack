@@ -1,6 +1,6 @@
 ## Java Full Stack Developer - Simplilearn
 
-> My full stuck journey, the essence of front-end, middleware, and back-end Java web developer technologies.
+> My full stack journey, the essence of front-end, middleware, and back-end Java web developer technologies.
 An end-to-end application dev., test and deploy code, store data and much more.
 
 
