@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-D:\WebDev\MastersJava\Java-Developer-Full-Stack\Servlets-Web-Apps-JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\983193932.index
-\HelloJSP\src
