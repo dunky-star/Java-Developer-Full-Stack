@@ -30,7 +30,7 @@ An end-to-end application dev., test and deploy code, store data and much more.
 		+ Spring Boot
 		+ Basic Spring security
 		+ REST API dev't
-		+ DevOps (Jenkins - CI/CD, Selenium FSD, Docker, Kubernetes)
+		+ DevOps (Jenkins - CI/CD, Selenium FSD, Docker, Kubernetes, etc.)
 
 
 ### License
