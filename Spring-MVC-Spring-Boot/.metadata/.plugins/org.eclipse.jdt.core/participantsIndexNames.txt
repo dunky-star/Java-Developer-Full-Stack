@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-D:\WebDev\MastersJava\Java-Developer-Full-Stack\Spring-MVC-Spring-Boot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3022595393.index
-\spring-mvc-web\src

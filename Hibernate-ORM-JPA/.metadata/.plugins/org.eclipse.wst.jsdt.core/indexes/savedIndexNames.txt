@@ -1,6 +1,0 @@
-INDEX VERSION 1.4+D:\WebDev\MastersJava\Java-Developer-Full-Stack\Hibernate-ORM-JPA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2518036784.index
-1270045141.index
-1051785590.index
-1610491622.index
-3449002565.index

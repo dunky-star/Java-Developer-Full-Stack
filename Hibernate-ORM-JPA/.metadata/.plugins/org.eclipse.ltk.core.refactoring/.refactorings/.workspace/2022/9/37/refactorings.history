@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;jsp-servlet-hibernate-mysql-app1&apos; to &apos;jsp-servlet-hibernate-mysql-app&apos;" description="Rename resource &apos;jsp-servlet-hibernate-mysql-app1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/jsp-servlet-hibernate-mysql-app1" name="jsp-servlet-hibernate-mysql-app" stamp="1662761025385" updateReferences="true"/>
-</session>

@@ -1,7 +1,0 @@
-package com.dunky.spring.annotations;
-
-public interface FortuneService {
-
-	String getFortune();
-
-}

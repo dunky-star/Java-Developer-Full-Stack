@@ -1,7 +1,0 @@
-INDEX VERSION 1.131
-D:\WebDev\MastersJava\Java-Developer-Full-Stack\Spring-Hibernate-ORM-JPA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1423056320.index
-\jsp-servlet-hibernate-mysql-app\src
-D:\WebDev\MastersJava\Java-Developer-Full-Stack\Spring-Hibernate-ORM-JPA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2110298097.index
-\jsp-servlet-jdbc-mysql-app\src
-D:\WebDev\MastersJava\Java-Developer-Full-Stack\Hibernate-ORM-JPA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1423056320.index
-\jsp-servlet-hibernate-mysql-app\src
