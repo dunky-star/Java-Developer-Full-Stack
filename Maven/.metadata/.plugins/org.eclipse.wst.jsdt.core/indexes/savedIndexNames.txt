@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+D:\WebDev\MastersJava\Java-Developer-Full-Stack\Maven\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-715998994.index
-335938793.index
-3019177737.index
-168656202.index
-4272869086.index
-1322976477.index
