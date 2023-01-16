@@ -8,7 +8,7 @@ public class Main {
     private static Locations locations = new Locations();
 
     public static void main(String[] args) {
-       
+
         Scanner scanner = new Scanner(System.in);
 
         Map<String, String> vocabulary = new HashMap<String, String>();
