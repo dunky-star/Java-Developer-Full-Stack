@@ -25,6 +25,10 @@ public class FileSysJava {
         filePath = Paths.get(".");
         System.out.println(filePath.toAbsolutePath());
 
+        // Checking if files/directory exist.
+        Path filePathCheck = FileSystems.getDefault().getPath("files");
+        System.out.println("Exists = " + Files.exists(filePath));
+
     }
 
     // Reading content of a file.
