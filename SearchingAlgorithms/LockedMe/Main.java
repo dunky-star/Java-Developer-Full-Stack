@@ -1,6 +1,12 @@
+/**
+ * Written by: Geoffrey Duncan Opiyo.
+ * Java program for file systems - Simplilearn phase 1 assignment.
+ */
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) throws IOException {
