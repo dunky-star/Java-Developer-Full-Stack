@@ -28,19 +28,24 @@ public class Main {
             // Calling the print method for user actions required.
             printActions();
 
+            File file = null;
             switch(Integer.parseInt(sc.nextLine())){
-                case 1 -> addFile();
+                case 0 -> flag = false;
+                case 1 -> addFile(null);
                 case 2 -> deleteFile();
-                default -> flag = false;
+                case 3 -> searchFile();
+                default -> listSortedFiles();
             }
 
         }
-
+        // close Scanner to prevent resource leak
+        sc.close();
 
     }
 
+
     // Method that creates directory and adds file to it.
-    private static void addFile() throws IOException {
+    private static void addFile(File file) throws IOException {
 
         boolean success = false;
         // Accepting input from user for directory.
@@ -77,12 +82,21 @@ public class Main {
             }
 
         }
-        // close Scanner to prevent resource leak sc.close();
-        sc.close();
+
     }
 
     // Method that deletes the file from the directory.
     private static void deleteFile() throws IOException {
+
+    }
+
+    // Method that deletes the file from the directory.
+    private static void searchFile() throws IOException {
+
+    }
+
+    // Method that deletes the file from the directory.
+    private static void listSortedFiles() throws IOException {
 
     }
 
