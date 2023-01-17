@@ -5,10 +5,20 @@ import java.io.IOException;
 import java.nio.file.*;
 
 public class FileSysJava {
+
     public static void main(String[] args){
 
-        Path filePath = Paths.get("D:\\", "Examples", "file1.txt");
+        DirectoryStream.Filter<Path> filter = p -> Files.isRegularFile(p);
 
+        Path directory = FileSystems.getDefault().getPath("D:\\", "Examples");  // FileTree\\Dir2 (windows)
+        try (DirectoryStream<Path> contents = Files.newDirectoryStream(directory, filter)) {
+            for (Path file : contents) {
+                System.out.println(file.getFileName());
+            }
+
+        } catch (IOException | DirectoryIteratorException e) {
+            System.out.println(e.getMessage());
+        }
 
 
 //        Path path = FileSystems.getDefault().getPath("WorkingDirectoryFile.txt");
@@ -75,9 +85,6 @@ public class FileSysJava {
         try {
             System.out.println("File created is: " + Files.createFile(filePath));     //creates file at specified location.
             // Copying file from one directory to another.
-            Path sourceFile = FileSystems.getDefault().getPath("D:\\", "Examples", "file1.txt");
-            Path copyFile = FileSystems.getDefault().getPath("D:\\", "Examples", "file1copy.txt");
-            Files.copy(sourceFile, copyFile, StandardCopyOption.REPLACE_EXISTING);
 
         } catch(IOException e) {
             e.printStackTrace();
