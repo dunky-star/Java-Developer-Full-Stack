@@ -106,10 +106,10 @@ public class Main {
         System.out.println("\n");
         String textBlock = """
                  Available actions:
-                 0 - To quit application.
-                 1 - To create new file.
-                 2 - To delete/remove file.
-                 3 - To search file(s).
+                 0 - Quit application.
+                 1 - Create new file.
+                 2 - Delete/remove file.
+                 3 - Search file(s).
                  Enter a number for which action you want to do:""";
         System.out.println(textBlock + " ");
     }
