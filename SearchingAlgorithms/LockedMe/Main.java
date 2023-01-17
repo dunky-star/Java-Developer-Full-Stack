@@ -26,14 +26,14 @@ public class Main {
             }
         }
 
-        // Creating new file in Java, only if not exists
-        System.out.println("Enter file name to be created ");
+        // Creating new file in the directory, only if not exists
+        System.out.println("Please enter the file name to be created: ");
         String filename = sc.nextLine();
         File f = new File(filename);
         if (f.exists()) {
-            System.out.println("File already exists");
+            System.out.println("File already exists.");
         }else {
-            System.out.println("No such file exists, creating now");
+            System.out.println("No such file exists, creating...");
             success = f.createNewFile();
             if (success) {
                 System.out.printf("Successfully created new file: %s%n", f);
@@ -43,6 +43,8 @@ public class Main {
 
         }
 
+        // close Scanner to prevent resource leak reader.close();
+        sc.close();
     }
 
 }
