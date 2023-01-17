@@ -29,8 +29,8 @@ public class Main {
         // Creating new file in the directory, only if not exists
         System.out.println("Please enter the file name to be created: ");
         String filename = sc.nextLine();
-        File f = new File(filename);
-        if (f.exists()) {
+        File f = new File(directory,filename);
+        if (f.exists() && f.isFile()) {
             System.out.println("File already exists.");
         }else {
             System.out.println("No such file exists, creating...");
