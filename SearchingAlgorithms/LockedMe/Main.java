@@ -1,7 +1,13 @@
 /**
  * @author: Geoffrey Duncan Opiyo.
  * @since: Java 17 (2022 - 2023).
- * Java program for file systems - Simplilearn phase 1 assignment.
+ * Java program for file systems - Lockers Pvt. Ltd.
+ * Challenge. Create an interactive console program as a prototype for handling below file operations:
+ * 0 - Quit application.
+ * 1 - Create new file.
+ * 2 - Delete/remove any file.
+ * 3 - Search file.
+ * Enter a number for which you want to perform operation:
  */
 
 import java.io.File;
@@ -10,9 +16,11 @@ import java.util.Scanner;
 
 
 public class Main {
+
+    private static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) throws IOException {
 
-        Scanner sc = new Scanner(System.in);
         boolean success = false;
 
         // Accepting input from user for directory.
