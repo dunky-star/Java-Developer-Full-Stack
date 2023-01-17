@@ -21,8 +21,28 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        boolean success = false;
+        boolean flag = true;
 
+       // For console interactivity.
+        while(flag){
+            // Calling the print method for user actions required.
+            printActions();
+
+            switch(Integer.parseInt(sc.nextLine())){
+                case 1 -> addFile();
+                case 2 -> deleteFile();
+                default -> flag = false;
+            }
+
+        }
+
+
+    }
+
+    // Method that creates directory and adds file to it.
+    private static void addFile() throws IOException {
+
+        boolean success = false;
         // Accepting input from user for directory.
         System.out.println("Please enter the directory path to create: ");
         String dir = sc.nextLine();
@@ -57,9 +77,27 @@ public class Main {
             }
 
         }
-
-        // close Scanner to prevent resource leak reader.close();
+        // close Scanner to prevent resource leak sc.close();
         sc.close();
+    }
+
+    // Method that deletes the file from the directory.
+    private static void deleteFile() throws IOException {
+
+    }
+
+
+    // Method that displays the menu options (Taking advantage of Java textBlock feature).
+    public static void printActions(){
+        System.out.println("\n");
+        String textBlock = """
+                 Available actions:
+                 0 - To quit application.
+                 1 - To create new file.
+                 2 - To delete/remove file.
+                 3 - To search file(s).
+                 Enter a number for which action you want to do:""";
+        System.out.println(textBlock + " ");
     }
 
 }
