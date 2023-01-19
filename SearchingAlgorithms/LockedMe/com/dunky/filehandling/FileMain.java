@@ -145,13 +145,20 @@ public class FileMain {
     // Method that displays the menu options (Taking advantage of Java textBlock feature).
     public static void printActions(){
         System.out.println("\n");
+        System.out.println("-".repeat(30));
+        System.out.println("Geoffrey Duncan Opiyo");
+        System.out.println("-".repeat(30));
+
         String textBlock = """
-                 Available actions:
-                 0 - Quit application.
-                 1 - Create new file.
-                 2 - Delete/remove file.
-                 3 - Search file(s).
-                 Enter a number for which action you want to do:""";
+                
+                AVAILABLE ACTIONS:
+                ==================
+                0 - Quit application.
+                1 - Create new file.
+                2 - Delete/remove file.
+                3 - Search file(s).
+                
+                Enter a number for which action you want to do:""";
         System.out.println(textBlock + " ");
     }
 
