@@ -52,7 +52,7 @@ public class Main {
         System.out.println("Please enter the directory path to create: ");
         String dir = sc.nextLine();
 
-        // Creating the new directory if it doesn't exists.
+        // Creating the new directory if it doesn't exist.
         File directory = new File(dir);
         if (directory.exists() && directory.isDirectory()) {
             System.out.println("Directory already exists ...");
@@ -90,12 +90,12 @@ public class Main {
 
     }
 
-    // Method that deletes the file from the directory.
+    // Method that searches the file from the directory.
     private static void searchFile() throws IOException {
 
     }
 
-    // Method that deletes the file from the directory.
+    // Method that list the file sorted from the directory.
     private static void listSortedFiles() throws IOException {
 
     }
