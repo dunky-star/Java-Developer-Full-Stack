@@ -119,7 +119,7 @@ public class FileMain {
                     System.out.printf("Failed to delete the file: %s%n", f);
                 }
             } else {
-                System.out.println("No such file exists...");
+                System.out.println("No such file exists, try again...");
             }
         } else {
             System.out.println("Directory not exists, try again...");
