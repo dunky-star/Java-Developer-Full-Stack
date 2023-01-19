@@ -86,6 +86,17 @@ public class FileMain {
 
     }
 
+
+    // Method that searches the file from the directory.
+    private static void searchFile() throws IOException {
+
+    }
+
+    // Method that list the file sorted from the directory.
+    private static void listSortedFiles() throws IOException {
+
+    }
+
     // Method that deletes the file from the directory.
     private static void deleteFile() throws IOException {
 
@@ -113,17 +124,6 @@ public class FileMain {
         } else {
             System.out.println("Directory not exists, try again...");
         }
-
-
-    }
-
-    // Method that searches the file from the directory.
-    private static void searchFile() throws IOException {
-
-    }
-
-    // Method that list the file sorted from the directory.
-    private static void listSortedFiles() throws IOException {
 
     }
 
