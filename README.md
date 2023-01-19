@@ -16,7 +16,8 @@ An end-to-end application dev., test and deploy code, store data and much more.
 	THE FOLLOWING SKILLS WERE LEARNT:
 
 		+ Agile
-		+ Java
+		+ Core Java
+		+ Advanced Java (Java EE)
 		+ Git
 		+ Maven
 		+ TypeScript
