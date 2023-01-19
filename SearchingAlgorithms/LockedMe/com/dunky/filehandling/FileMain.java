@@ -22,24 +22,28 @@ public class FileMain {
     private static boolean success = false;
 
     public static void main(String[] args) throws IOException {
+       try {
+           boolean flag = true;
 
-        boolean flag = true;
+           // For console interactivity.
+           while (flag) {
+               // Calling the print method for user actions required.
+               printActions();
 
-       // For console interactivity.
-        while(flag){
-            // Calling the print method for user actions required.
-            printActions();
+               File file = null;
+               switch (Integer.parseInt(sc.nextLine())) {
+                   case 0 -> flag = false;
+                   case 1 -> addFile(null);
+                   case 2 -> deleteFile();
+                   case 3 -> searchFile();
+                   default -> listSortedFiles();
+               }
 
-            File file = null;
-            switch(Integer.parseInt(sc.nextLine())){
-                case 0 -> flag = false;
-                case 1 -> addFile(null);
-                case 2 -> deleteFile();
-                case 3 -> searchFile();
-                default -> listSortedFiles();
-            }
+           }
+       }catch (Exception e) {
+           e.getStackTrace();
+       }
 
-        }
         // close Scanner to prevent resource leak
         sc.close();
 
@@ -99,7 +103,7 @@ public class FileMain {
         }else {
             System.out.println("Directory not exists, try again...");
         }
-        
+
     }
 
     // Method that list the file sorted from the directory.
