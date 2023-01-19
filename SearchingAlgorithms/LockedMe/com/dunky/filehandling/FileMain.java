@@ -89,6 +89,17 @@ public class FileMain {
 
     // Method that searches the file from the directory.
     private static void searchFile() throws IOException {
+        // Accepting input from user for directory to search the file from.
+        System.out.println("Please enter the directory to search the file: ");
+        String dir = sc.nextLine();
+
+        File directory = new File(dir);
+        if (directory.exists() && directory.isDirectory()) {
+            // Write search logic here.
+        }else {
+            System.out.println("Directory not exists, try again...");
+        }
+
 
     }
 
