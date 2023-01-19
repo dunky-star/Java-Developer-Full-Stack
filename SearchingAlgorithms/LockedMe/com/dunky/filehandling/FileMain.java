@@ -9,15 +9,17 @@
  * 3 - Search file.
  * Enter a number for which you want to perform operation:
  */
+package com.dunky.filehandling;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
 
-public class Main {
+public class FileMain {
 
     private static Scanner sc = new Scanner(System.in);
+    private static boolean success = false;
 
     public static void main(String[] args) throws IOException {
 
@@ -47,7 +49,6 @@ public class Main {
     // Method that creates directory and adds file to it.
     private static void addFile(File file) throws IOException {
 
-        boolean success = false;
         // Accepting input from user for directory.
         System.out.println("Please enter the directory path to create: ");
         String dir = sc.nextLine();
@@ -87,6 +88,32 @@ public class Main {
 
     // Method that deletes the file from the directory.
     private static void deleteFile() throws IOException {
+
+        // Accepting input from user for directory that contains the file.
+        System.out.println("Please enter the directory to delete file from: ");
+        String dir = sc.nextLine();
+
+        File directory = new File(dir);
+        if (directory.exists() && directory.isDirectory()) {
+
+            // Accepting an input to delete a file in the directory, if exists.
+            System.out.println("Please enter the file name to be deleted: ");
+            String filename = sc.nextLine();
+            File f = new File(directory,filename);
+            if (f.exists() && f.isFile()) {
+                success = f.delete();
+                if (success) {
+                    System.out.printf("File successfully deleted!: %s%n", f);
+                } else {
+                    System.out.printf("Failed to delete the file: %s%n", f);
+                }
+            } else {
+                System.out.println("No such file exists...");
+            }
+        } else {
+            System.out.println("Directory not exists, try again...");
+        }
+
 
     }
 
