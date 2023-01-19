@@ -90,7 +90,7 @@ public class FileMain {
     // Method that searches the file from the directory.
     private static void searchFile() throws IOException {
         // Accepting input from user for directory to search the file from.
-        System.out.println("Please enter the directory to search the file: ");
+        System.out.println("Please enter the directory to search the file from: ");
         String dir = sc.nextLine();
 
         File directory = new File(dir);
@@ -99,8 +99,7 @@ public class FileMain {
         }else {
             System.out.println("Directory not exists, try again...");
         }
-
-
+        
     }
 
     // Method that list the file sorted from the directory.
