@@ -183,9 +183,9 @@ public class FileMain {
             for (File file : fileArray) {
                 BasicFileAttributes basicFileAttributes = Files.readAttributes(file.toPath(), BasicFileAttributes.class);
                 if (basicFileAttributes.isRegularFile()) {
-                    System.out.println("File " + file.getName() + " Date modified " + basicFileAttributes.lastModifiedTime().toMillis());
+                    System.out.println("File " + file.getName() );
                 } else if (basicFileAttributes.isDirectory()) {
-                    System.out.println("Directory " + file.getName() + " Date modified " + basicFileAttributes.lastModifiedTime().toMillis());
+                    System.out.println("Directory " + file.getName() );
                 }
             }
 
