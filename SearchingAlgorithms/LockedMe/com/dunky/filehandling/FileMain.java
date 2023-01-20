@@ -15,12 +15,14 @@ package com.dunky.filehandling;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 
 public class FileMain {
 
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
     private static boolean success = false;
 
     public static void main(String[] args) throws IOException {
@@ -167,11 +169,20 @@ public class FileMain {
         if (directory.exists() && directory.isDirectory()) {
             // To store the files inside the directory in an Array.
             File[] fileArray = directory.listFiles();
-            for (int i = 0; i < fileArray.length; i++) {
-                if (fileArray[i].isFile()) {
-                    System.out.println("File " + fileArray[i].getName());
-                } else if (fileArray[i].isDirectory()) {
-                    System.out.println("Directory " + fileArray[i].getName());
+            // Using comparator and comparing to sort the files by last date modified.
+            assert fileArray != null;
+            Arrays.sort(fileArray, Comparator.comparingLong(File::lastModified));
+            System.out.println(
+                    "**********************************************");
+            System.out.println(
+                    "Files from the directory : " + directory);
+            System.out.println(
+                    "**********************************************");
+            for (File file : fileArray) {
+                if (file.isFile()) {
+                    System.out.println("File " + file.getName());
+                } else if (file.isDirectory()) {
+                    System.out.println("Directory " + file.getName());
                 }
             }
 
