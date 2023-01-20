@@ -16,6 +16,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -180,12 +181,14 @@ public class FileMain {
                     "Files from the directory : " + directory);
             System.out.println(
                     "**********************************************");
+            // For formatting the file last modified time in a more human friendly display.
+            SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
             for (File file : fileArray) {
-                BasicFileAttributes basicFileAttributes = Files.readAttributes(file.toPath(), BasicFileAttributes.class);
-                if (basicFileAttributes.isRegularFile()) {
-                    System.out.println("File " + file.getName() );
-                } else if (basicFileAttributes.isDirectory()) {
-                    System.out.println("Directory " + file.getName() );
+                BasicFileAttributes attr = Files.readAttributes(file.toPath(), BasicFileAttributes.class);
+                if (attr.isRegularFile()) {
+                    System.out.println("File " + file.getName() + " Last modified time " + sdf.format(attr.lastModifiedTime()));
+                } else if (attr.isDirectory()) {
+                    System.out.println("Directory " + file.getName() + " Last modified time " + sdf.format(attr.lastModifiedTime()));
                 }
             }
 
