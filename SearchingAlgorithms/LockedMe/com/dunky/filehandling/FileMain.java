@@ -17,8 +17,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 
@@ -171,9 +169,7 @@ public class FileMain {
         if (directory.exists() && directory.isDirectory()) {
             // To store the files inside the directory in an Array.
             File[] fileArray = directory.listFiles();
-            // Using comparator and comparing to sort the files by last date modified.
-            assert fileArray != null;
-            Arrays.sort(fileArray, Comparator.comparingLong(File::lastModified));
+
             System.out.println(
                     "**********************************************");
             System.out.println(
@@ -181,10 +177,11 @@ public class FileMain {
             System.out.println(
                     "**********************************************");
 
+            assert fileArray != null;
             for (File file : fileArray) {
                 BasicFileAttributes attr = Files.readAttributes(file.toPath(), BasicFileAttributes.class);
                 if (attr.isRegularFile()) {
-                    System.out.println("File " + file.getName() + " Last modified time " + attr.lastModifiedTime());
+                    System.out.println(file.getName() + " Last modified time " + attr.lastModifiedTime());
                 } else if (attr.isDirectory()) {
                     System.out.println("Directory " + file.getName() + " Last modified time " + attr.lastModifiedTime());
                 }
@@ -230,9 +227,10 @@ public class FileMain {
     // Method that displays the menu options (Taking advantage of Java textBlock feature).
     public static void printActions(){
         System.out.println("\n");
-        System.out.println("-".repeat(30));
-        System.out.println("Geoffrey Duncan Opiyo");
-        System.out.println("-".repeat(30));
+        System.out.println("-".repeat(33));
+        System.out.println("Developer: Geoffrey Duncan Opiyo");
+        System.out.println("Company Lockers Pvt. Ltd.");
+        System.out.println("-".repeat(33));
 
         String textBlock = """
                 
