@@ -96,11 +96,17 @@ public class FileMain {
 
     // Method that searches the file from the directory.
     private static void searchFile() throws IOException {
+
         // Accepting input from user for directory to search the file from.
         System.out.println("Please enter the directory to search the file from: ");
         String dir = sc.nextLine();
         File directory = new File(dir);
         if (directory.exists() && directory.isDirectory()) {
+
+            // Accepting an input to search a file in the directory, if exists.
+            System.out.println("Please enter the file name you want to search: ");
+            String filename = sc.nextLine();
+            File fileToSearch = new File(directory,filename);
             // Store the files inside the directory in an ArrayList data structure.
             ArrayList<File> fileList = new ArrayList<>();
             File[] fileArray = directory.listFiles();
@@ -111,11 +117,6 @@ public class FileMain {
                     fileList.add(new File(file.getName()));
                 }
             }
-            // Accepting an input to search a file in the directory, if exists.
-            System.out.println("Please enter the file name you want to search: ");
-            String filename = sc.nextLine();
-
-            File fileToSearch = new File(directory,filename);
             // Calling linear search function to search the file.
             int result = linearSearchAlgo(fileList, fileToSearch);
             print (fileToSearch , result);
