@@ -33,10 +33,10 @@ public class FileMain {
 
                File file = null;
                switch (Integer.parseInt(sc.nextLine())) {
-                   case 1 -> addFile(null);
-                   case 2 -> deleteFile();
-                   case 3 -> searchFile();
-                   case 4 -> listSortedFiles();
+                   case 1 -> listSortedFiles();
+                   case 2 -> addFile(null);
+                   case 3 -> deleteFile();
+                   case 4 -> searchFile();
                    default -> flag = false;
                }
 
@@ -98,12 +98,13 @@ public class FileMain {
         String dir = sc.nextLine();
         File directory = new File(dir);
         if (directory.exists() && directory.isDirectory()) {
-            // To store the files inside the directory in an ArrayList data structure.
+            // Store the files inside the directory in an ArrayList data structure.
             ArrayList<File> fileList = new ArrayList<>();
             File[] fileArray = directory.listFiles();
             assert fileArray != null;
             for (File file : fileArray) {
                 if (file.isFile()) {
+                    // adding individual file to ArrayList<> fileList.
                     fileList.add(new File(file.getName()));
                 }
             }
@@ -121,8 +122,14 @@ public class FileMain {
         }
 
     }
-
-    // Creating search function
+    
+    /**
+     * Creating the search function.
+     * Applications: Linear Search can be used for searching in a small and unsorted
+     * set of data which is guaranteed not to increase in size by much.
+     * Due to its linear increase in time complexity, it does not find application in many production systems
+     * Task: Search a particular file in a given array.
+     */
     private static int linearSearchAlgo(ArrayList<File> fileList, File elementToSearch){
         if (fileList == null || fileList.size() == 0){
             return -1;
