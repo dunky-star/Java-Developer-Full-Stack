@@ -14,6 +14,8 @@ package com.dunky.filehandling;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -179,10 +181,11 @@ public class FileMain {
             System.out.println(
                     "**********************************************");
             for (File file : fileArray) {
-                if (file.isFile()) {
-                    System.out.println("File " + file.getName());
-                } else if (file.isDirectory()) {
-                    System.out.println("Directory " + file.getName());
+                BasicFileAttributes basicFileAttributes = Files.readAttributes(file.toPath(), BasicFileAttributes.class);
+                if (basicFileAttributes.isRegularFile()) {
+                    System.out.println("File " + file.getName() + " Date modified " + basicFileAttributes.lastModifiedTime().toMillis());
+                } else if (basicFileAttributes.isDirectory()) {
+                    System.out.println("Directory " + file.getName() + " Date modified " + basicFileAttributes.lastModifiedTime().toMillis());
                 }
             }
 
