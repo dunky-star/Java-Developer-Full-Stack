@@ -4,9 +4,10 @@
  * Java program for file systems - Lockers Pvt. Ltd.
  * Challenge. Create an interactive console program as a prototype for handling below file operations:
  * 0 - Quit application.
- * 1 - Create new file.
- * 2 - Delete/remove any file.
- * 3 - Search file.
+ * 1 - Display all files.
+ * 2 - Create new file.
+ * 3 - Delete/remove any file.
+ * 4 - Search file.
  * Enter a number for which you want to perform operation:
  */
 package com.dunky.filehandling;
@@ -122,7 +123,7 @@ public class FileMain {
         }
 
     }
-    
+
     /**
      * Creating the search function.
      * Applications: Linear Search can be used for searching in a small and unsorted
@@ -225,7 +226,7 @@ public class FileMain {
                 0 - Quit application.
                 1 - Display all files.
                 2 - Create new file.
-                3 - Delete/remove file.
+                3 - Delete/remove any file.
                 4 - Search file(s).
                               
                 Enter a number for which action you want to do:""";
