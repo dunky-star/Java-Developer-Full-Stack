@@ -13,6 +13,7 @@ package com.dunky.filehandling;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -32,11 +33,11 @@ public class FileMain {
 
                File file = null;
                switch (Integer.parseInt(sc.nextLine())) {
-                   case 0 -> flag = false;
                    case 1 -> addFile(null);
                    case 2 -> deleteFile();
                    case 3 -> searchFile();
-                   default -> listSortedFiles();
+                   case 4 -> listSortedFiles();
+                   default -> flag = false;
                }
 
            }
@@ -90,24 +91,85 @@ public class FileMain {
 
     }
 
-
     // Method that searches the file from the directory.
     private static void searchFile() throws IOException {
         // Accepting input from user for directory to search the file from.
         System.out.println("Please enter the directory to search the file from: ");
         String dir = sc.nextLine();
-
         File directory = new File(dir);
         if (directory.exists() && directory.isDirectory()) {
-            // Write search logic here.
+            // To store the files inside the directory in an ArrayList data structure.
+            ArrayList<File> fileList = new ArrayList<>();
+            File[] fileArray = directory.listFiles();
+            assert fileArray != null;
+            for (File file : fileArray) {
+                if (file.isFile()) {
+                    fileList.add(new File(file.getName()));
+                }
+            }
+            // Accepting an input to search a file in the directory, if exists.
+            System.out.println("Please enter the file name you want to search: ");
+            String filename = sc.nextLine();
+
+            File fileToSearch = new File(directory,filename);
+            // Calling linear search function to search the file.
+            int result = linearSearchAlgo(fileList, fileToSearch);
+            print (fileToSearch , result);
+
         }else {
             System.out.println("Directory not exists, try again...");
         }
 
     }
 
+    // Creating search function
+    private static int linearSearchAlgo(ArrayList<File> fileList, File elementToSearch){
+        if (fileList == null || fileList.size() == 0){
+            return -1;
+        }
+        if (elementToSearch == null){
+            return -1;
+        }
+        for (int i = 0; i < fileList.size(); i++){
+            if (fileList.get(i).getName().equals(elementToSearch.getName())){
+                return i;
+            }
+
+        }
+        return -1;
+    }
+
+    // Helper function to print file search results.
+    private static void print(File fileFound, int result){
+        if (result == -1){
+            System.out.println(fileFound + " not found.");
+        }else{
+            System.out.println(fileFound + " found at index: " + result);
+        }
+
+    }
+
     // Method that list the file sorted from the directory.
     private static void listSortedFiles() throws IOException {
+        // Accepting input from user for directory to search the file from.
+        System.out.println("Please enter the directory to list all the files from: ");
+        String dir = sc.nextLine();
+
+        File directory = new File(dir);
+        if (directory.exists() && directory.isDirectory()) {
+            // To store the files inside the directory in an Array.
+            File[] fileArray = directory.listFiles();
+            for (int i = 0; i < fileArray.length; i++) {
+                if (fileArray[i].isFile()) {
+                    System.out.println("File " + fileArray[i].getName());
+                } else if (fileArray[i].isDirectory()) {
+                    System.out.println("Directory " + fileArray[i].getName());
+                }
+            }
+
+        } else {
+            System.out.println("Directory not exists, try again...");
+        }
 
     }
 
@@ -154,10 +216,11 @@ public class FileMain {
                 AVAILABLE ACTIONS:
                 ==================
                 0 - Quit application.
-                1 - Create new file.
-                2 - Delete/remove file.
-                3 - Search file(s).
-                
+                1 - Display all files.
+                2 - Create new file.
+                3 - Delete/remove file.
+                4 - Search file(s).
+                              
                 Enter a number for which action you want to do:""";
         System.out.println(textBlock + " ");
     }
