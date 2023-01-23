@@ -10,5 +10,8 @@ public class Main {
             utils.addChar(sb, 'a');
         }
         System.out.println(sb);
+
+        String str = "abcdefghijkmnopqrstuvwxyz";
+        System.out.println(utils.upperAndPrefix(utils.addSuffix(str)));
     }
 }
