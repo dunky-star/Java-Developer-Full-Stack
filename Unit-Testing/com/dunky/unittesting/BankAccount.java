@@ -11,6 +11,9 @@ public class BankAccount {
         this.balance = balance;
     }
 
+    // The branch argument is true if the customer is performing the transaction
+    // at a branch, with a teller.
+    // It's false if the customer is performing the transaction at an ATM
     public double deposit(double amount, boolean branch){
         balance += amount;
         return balance;
@@ -20,4 +23,10 @@ public class BankAccount {
         balance -= amount;
         return balance;
     }
+
+    public double getBalance(){
+        return balance;
+    }
+
+    // More methods that use firstName, lastName, and perform other functions
 }
