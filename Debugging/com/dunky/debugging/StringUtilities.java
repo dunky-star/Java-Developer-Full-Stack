@@ -1,6 +1,10 @@
 package com.dunky.debugging;
 
 public class StringUtilities {
-    public void addChar(StringBuilder sb, char a) {
+    private StringBuilder sBuilder = new StringBuilder();
+    private int charsAdded = 0;
+    public void addChar(StringBuilder sBuilder, char c) {
+        this.sBuilder.append(c);
+        charsAdded++;
     }
 }
