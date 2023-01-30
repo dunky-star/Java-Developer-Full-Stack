@@ -26,7 +26,7 @@ An end-to-end application dev., test and deploy code, store data and much more.
 		+ HTML and CSS3
 		+ Servlets
 		+ JSP
-		+ Hibernate and JPA
+		+ JPA using Hibernate as the implementation.
 		+ Spring core
 		+ Spring Boot
 		+ Basic Spring security
